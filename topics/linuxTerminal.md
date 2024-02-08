@@ -55,3 +55,13 @@ rm -r DIRECTORY    # remove directory (and all files inside)
 
 > /dev/null    # output directed to this location will be discarded
 ```
+
+## Find & Globbing
+```bash
+?      # single wildcard character
+*      # any amount of wildcard characters
+[SET]  # one character from SET
+[!SET] # one character NOT from SET
+
+```
+
