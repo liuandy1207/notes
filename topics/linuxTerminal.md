@@ -28,6 +28,7 @@ ls -l   # list in long format
 
 # READ
 cat FILES    # concatenate file(s) and print to stdout
+wc FILES     # print line / word / byte counts for FILES
 
 # CREATE
 mkdir DIRECTORY    # create directory
@@ -41,4 +42,15 @@ mv SOURCE/FILE DESTINATION/FILE    # move source to destination or rename (if so
 # DELETE
 rm FILE            # remove file
 rm -r DIRECTORY    # remove directory (and all files inside)
+```
+
+## Redirection 
+```bash
+< FILE   # redirects the contents of FILE into stdin
+> FILE   # redirects the output of stdout into FILE
+2> FILE  # redirects the output of stderr into FILE
+&> FILE  # redirects the output of stdout and stderr into FILE
+>>       # concatenate, instead of overwriting
+
+> /def/null    # output directed to this location will be discarded
 ```
