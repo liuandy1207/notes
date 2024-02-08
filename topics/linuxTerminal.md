@@ -31,6 +31,8 @@ cat FILES    # concatenate file(s) and print to stdout
 
 # CREATE
 mkdir DIRECTORY    # create directory
+touch FILE         # create empty file, if FILE does not already exist
+zip NAME PATH      # create a zip file named NAME
 
 # COPY
 cp SOURCE/FILE DESTINATION/FILE    # create a copy of the source at destination
