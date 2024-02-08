@@ -29,6 +29,7 @@ ls -l   # list in long format
 # READ
 cat FILES    # concatenate file(s) and print to stdout
 wc FILES     # print line / word / byte counts for FILES
+echo STRING  # print STRING to stdout
 
 # CREATE
 mkdir DIRECTORY    # create directory
@@ -52,5 +53,5 @@ rm -r DIRECTORY    # remove directory (and all files inside)
 &> FILE  # redirects the output of stdout and stderr into FILE
 >>       # concatenate, instead of overwriting
 
-> /def/null    # output directed to this location will be discarded
+> /dev/null    # output directed to this location will be discarded
 ```
