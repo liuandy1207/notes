@@ -34,8 +34,16 @@ ${PATH}         # concatenation of all directories, seperated by :
 ```
 `${PATH}` is the default search path for commands and programs.
 
+## Command Line Arguments
+```bash
+${0}              # name of the current script
+${1}, ${2}, ...   # argument 1, 2, ... of the current script
+${#}              # number of arguments provided for the current script
+${@}              # all provided arguments as seperate strings
 
+shift    # discard the first argument and move all arguments one position to the left
 
+```
 
 
 
