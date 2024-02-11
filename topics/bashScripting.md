@@ -75,6 +75,7 @@ test 1 -eq 1      # produces no output, but returns 0 in ${?} (true/success)
 [ 1 -eq 1 ]       # same command as above, but different syntax (note the necessary whitespace)
 exit NUM          # return an error code, use different numbers for different errors
 
+# IF / ELIF / ELSE STATEMENTS
 if [ CONDITION ]; then
   STATEMENTS
 elif [ CONDITION ]; then
@@ -87,6 +88,7 @@ fi
 
 ## Loops
 ```bash
+# WHILE LOOPS
 while [ CONDITION ]; do
   STATEMENTS
 done
@@ -98,6 +100,7 @@ while [ $x -le $1 ]; do
   x=$((x+1))    # update integer variable through $(()) syntax, note the double brackets
 done
 
+# FOR LOOPS
 for VARIABLE in SEQUENCE; do
   ${VARIABLE}      # changes every iteration to the next item in the sequence
   STATEMENTS
