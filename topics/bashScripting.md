@@ -98,8 +98,13 @@ while [ $x -le $1 ]; do
   x=$((x+1))    # update integer variable through $(()) syntax, note the double brackets
 done
 
-```
+for VARIABLE in SEQUENCE; do
+  ${VARIABLE}      # changes every iteration to the next item in the sequence
+  STATEMENTS
+done
 
+```
+A sequence is any list of items seperated by whitespace.
 
 
 
