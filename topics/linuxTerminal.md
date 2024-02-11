@@ -16,7 +16,7 @@ cd [DIRECTORY]    # change directory
 man [COMMAND]       # show command manual
 
 # embedded comand
-$([COMMAND_EXPRESSION])        # gets executed first in an expression, then replaced by its output in the expression
+$([COMMAND_EXPRESSION])    # gets executed first in an expression, then replaced by its output in the expression
 
 ctrl + l            # clear screen (by scrolling down)
 
