@@ -46,7 +46,9 @@ shift    # discard the first argument and move all arguments one position to the
 ```
 ## User Input
 ```bash
-read VARIABLE
+read VARIABLE									# reads user input and stores it in VARIABLE
+read -p "PROMPT" VARIABLE 		# outputs PROMPT, reads user input, and stores it in VARIABLE
+read													# reads user input and stores it in ${REPLY}
 
 ```
 
