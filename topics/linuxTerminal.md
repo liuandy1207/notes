@@ -18,6 +18,10 @@ man [COMMAND]       # show command manual
 # EMBEDDED COMMAND
 $([COMMAND_EXPRESSION])    # gets executed first in an expression, then replaced by its output in the expression
 
+ctrl + a            # go to the beginning of the line
+ctrl + e            # go to the end of the line
+option + ←          # jump word left
+option + →          # jump word right
 ctrl + l            # clear screen (by scrolling down)
 
 ```
