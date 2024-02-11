@@ -32,6 +32,8 @@ head [FILES]                   # outputs the first 10 lines of each file
 head -n [NUMBER] [FILES]           # outputs the first NUMBER lines of each file
 wc [FILES]                     # print line / word / byte counts for each file
 echo [EXPRESSION]              # print [EXPRESSION] to stdout
+
+# ORDERING
 sort [FILE]                    # sort the lines of files
 sort -u [FILES]                    # suppress duplicates when sorting
 shuf [FILES]                   # output each line from the files in random order
