@@ -93,17 +93,17 @@ while [ CONDITION ]; do
   STATEMENTS
 done
 
-# example
-x=1
-while [ $x -le $1 ]; do
-  echo $x
-  x=$((x+1))    # update integer variable through $(()) syntax, note the double brackets
-done
-
 # FOR LOOPS
 for VARIABLE in SEQUENCE; do
   ${VARIABLE}      # changes every iteration to the next item in the sequence
   STATEMENTS
+done
+
+# EXAMPLE - WHILE LOOP WITH CHANGING VARIABLE
+x=1
+while [ $x -le $1 ]; do
+  echo $x
+  x=$((x+1))    # update integer variable through $(()) syntax, note the double brackets
 done
 
 ```
