@@ -99,7 +99,7 @@ for VARIABLE in SEQUENCE; do
   STATEMENTS
 done
 
-# EXAMPLE - WHILE LOOP WITH CHANGING VARIABLE
+# EXAMPLE - while loop with changing variable
 x=1
 while [ $x -le $1 ]; do
   echo $x
