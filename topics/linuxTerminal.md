@@ -22,6 +22,12 @@ ctrl + l            # clear screen (by scrolling down)
 
 ```
 
+## Permissions
+```bash
+
+```
+
+
 ## Files
 ```bash
 # LIST
