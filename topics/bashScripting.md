@@ -73,6 +73,7 @@ read													# reads user input and stores it in ${REPLY}
 ```bash
 test 1 -eq 1      # produces no output, but returns 0 in ${?} (true/success)
 [ 1 -eq 1 ]       # same command as above, but different syntax (note the necessary whitespace)
+exit NUM          # return an error code, use different numbers for different errors
 
 if [ CONDITION ]; then
   STATEMENTS
@@ -94,11 +95,10 @@ done
 x=1
 while [ $x -le $1 ]; do
   echo $x
-  x=$((x+1))    # update variable through embedded commands, note the double brackets
+  x=$((x+1))    # update integer variable through $(()) syntax, note the double brackets
 done
 
 ```
-`++x` in most languages is `x=$((x+1))` in `bash`.
 
 
 
