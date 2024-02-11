@@ -93,7 +93,7 @@ while [ CONDITION ]; do
   STATEMENTS
 done
 
-# EXAMPLE
+# example
 x=1
 while [ $x -le $1 ]; do
   echo $x
