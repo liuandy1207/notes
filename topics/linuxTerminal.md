@@ -14,7 +14,9 @@ cd [DIRECTORY]    # change directory
 ## Commands
 ```bash
 man [COMMAND]       # show command manual
-$([COMMAND])        # embedded command, gets executed first in an expression, gets replaced by its output in the expression
+
+# embedded comand
+$([COMMAND_EXPRESSION])        # gets executed first in an expression, then replaced by its output in the expression
 
 ctrl + l            # clear screen (by scrolling down)
 
