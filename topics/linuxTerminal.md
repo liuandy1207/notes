@@ -38,9 +38,18 @@ r    # read permission granted
 w    # write permission granted
 x    # execute permission granted
 -    # permission NOT granted
+u    # owner/user
+g    # group
+o    # other
+a    # all
+
+chmod u+r [THING]   # add read permission for user
+chmod u-r [THING]   # revoke read permission for user
+chmod u=r [THING]   # set permission to r-- for user
 
 ```
-For directories, execute permission allows entrance into the directory, but files may not be visible.
+For directories, execute permission allows entrance into the directory, but files may not be visible. <br>
+Three [0-7] digits can be used to specify permissions for all. Each rwx combo is interpreted as binary to obtain the digit for u/g/o.
 
 
 ## Files
