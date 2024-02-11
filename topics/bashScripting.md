@@ -5,6 +5,10 @@ When execute permissions are given, scripts can be exeucted through a direct pat
 Otherwise, scripts can be executed through `bash [FILENAME]`. <br>
 
 By convention, these files end with `.sh`. <br>
+```bash
+#!/bin/bash
+
+```
 
 ## Shell Variables
 The `bash` shell can store information as strings and uses the same naming rules as `C`. <br>
