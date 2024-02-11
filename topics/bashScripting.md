@@ -44,6 +44,11 @@ ${@}              # all provided arguments as seperate strings
 shift    # discard the first argument and move all arguments one position to the left
 
 ```
+## User Input
+```bash
+read VARIABLE
+
+```
 
 
 
