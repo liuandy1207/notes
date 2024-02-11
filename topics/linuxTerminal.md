@@ -106,8 +106,8 @@ find [EXPRESSION]    # search for files in a file hierarchy
 
 ?        # single wildcard character
 *        # any amount of wildcard characters
-[SET]    # one character from SET
-[!SET]   # one character NOT from SET
+[abc]    # one character from the set
+[!abc]   # one character NOT from the set
 
 ```
 
