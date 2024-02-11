@@ -27,7 +27,10 @@ ctrl + l            # clear screen (by scrolling down)
 ```
 
 ## Permissions
+File permissions can be viewed by using `ls -l`. 
+![alt text]([http://url/to/img.png](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F3d8a3062-f1f0-41f3-8318-5981366e30bd%2F9acfed0e-74a1-4826-a0c8-ca9c7d281d3e%2FScreenshot_2024-01-19_at_1.26.58_PM.png?table=block&id=0ecd9b94-8b1a-4727-8d46-ccbcccb11755&spaceId=3d8a3062-f1f0-41f3-8318-5981366e30bd&width=2000&userId=c3ddc00b-8abb-4687-a2b7-d1b5f98edad8&cache=v2))
 ```bash
+
 
 ```
 
