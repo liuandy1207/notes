@@ -108,7 +108,3 @@ done
 
 ```
 A sequence is any list of items seperated by whitespace.
-
-
-
-
