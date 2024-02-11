@@ -8,6 +8,8 @@ By convention, these files end with `.sh`. <br>
 ```bash
 #!/bin/bash
 
+# script goes here
+
 ```
 
 ## Shell Variables
