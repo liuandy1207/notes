@@ -12,7 +12,6 @@ cd [DIRECTORY]    # change directory
 ```
 
 ## Commands
-Embedded commands get executed first in an expression. After execution, the embedded command is replaced by its output in the expression.
 
 ```bash
 man [COMMAND]       # show command manual
@@ -26,14 +25,13 @@ option + →          # jump word right
 ctrl + l            # clear screen (by scrolling down)
 
 ```
+Embedded commands get executed first in an expression. After execution, the embedded command is replaced by its output in the expression.
 
 ## Permissions
 File permissions can be viewed by using `ls -l`. 
 
 ![image](https://github.com/liuandy1207/notes/assets/72530429/8095f10b-fa26-499e-9b00-78bb798a8ad4)
 ![image](https://github.com/liuandy1207/notes/assets/72530429/da874e9c-f5d3-4fc2-9b8a-f79a84e4f93f)
-
-For directories
 
 ```bash
 r    # read permission granted
@@ -42,6 +40,7 @@ x    # execute permission granted
 -    # permission NOT granted
 
 ```
+For directories, execute permission allows entrance into the directory, but files may not be visible.
 
 
 ## Files
@@ -104,9 +103,6 @@ find [EXPRESSION]    # search for files in a file hierarchy
 ```
 
 ## `egrep`
-Double quotes around patterns is recommended. <br>
-Escape special characters with `\`.
-
 ```bash
 egrep "[PATTERNS]" [FILES]      # output lines that match a pattern
 egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
@@ -125,6 +121,8 @@ egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
 "abc"?         # preceding subexpression can be repeated 0 or 1 times
 
 ```
+Double quotes around patterns is recommended. <br>
+Escape special characters with `\`.
 
 
 
