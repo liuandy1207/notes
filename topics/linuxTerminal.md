@@ -104,8 +104,8 @@ find [EXPRESSION]    # search for files in a file hierarchy
 ```
 
 ## `egrep`
+Double quotes around patterns is recommended. <br>
 Escape special characters with `\`.
-Double quotes around patterns is recommended. 
 
 ```bash
 egrep "[PATTERNS]" [FILES]      # output lines that match a pattern
