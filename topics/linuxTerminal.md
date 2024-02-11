@@ -12,7 +12,7 @@ cd [DIRECTORY]    # change directory
 ```
 
 ## Commands
-Embedded commands get executed first in an expression. After execution, their value in the expression is replaced by the commands output.
+Embedded commands get executed first in an expression. After execution, the embedded command is replaced by its output in the expression.
 
 ```bash
 man [COMMAND]       # show command manual
