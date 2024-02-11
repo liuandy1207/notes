@@ -88,7 +88,7 @@ egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
 
 # PATTERN COMPONENTS / REGULAR EXPRESSIONS
 "^abc"         # the pattern must exist at the start of the line
-"abc$          # line must end with the pattern
+"abc$"         # line must end with the pattern
 "abc"|"cba"    # "or"
 "."            # any single character
 "[abc]"        # any single character from the set
