@@ -49,7 +49,7 @@ chmod u=r [THING]   # set permission to r-- for user
 
 ```
 For directories, execute permission allows entrance into the directory, but files may not be visible. <br>
-Three [0-7] digits can be used to specify permissions. Each digit represents binary for rwx of u/g/o.
+Three [0-7] digits can be used to specify permissions. Each digit represents binary for `rwx` of `u/g/o`.
 
 
 ## Files
