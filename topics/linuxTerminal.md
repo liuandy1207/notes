@@ -7,13 +7,14 @@
 .          # current directory
 ..         # parent directory
 
-pwd             # print full path to the working directory
-cd DIRECTORY    # change directory
+pwd               # print full path to the working directory
+cd [DIRECTORY]    # change directory
 ```
 
 ## Commands
 ```bash
-man COMMAND_NAME    # show command manual
+man [COMMAND]       # show command manual
+$([COMMAND])        # embedded command, gets executed first in an expression, gets replaced by its output in the expression
 
 ctrl + l            # clear screen (by scrolling down)
 
