@@ -84,6 +84,21 @@ fi
 
 ```
 
+## Loops
+```bash
+while [ CONDITION ]; do
+  STATEMENTS
+done
+
+# EXAMPLE
+x=1
+while [ $x -le $1 ]; do
+  echo $x
+  x=$((x+1))    # update variable through embedded commands, note the double brackets
+done
+
+```
+`++x` in most languages is `x=$((x+1))` in `bash`.
 
 
 
