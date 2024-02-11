@@ -29,7 +29,7 @@ ctrl + l            # clear screen (by scrolling down)
 
 
 ## Files
-```bash
+```shell
 # LIST
 ls      # list all non-hidden files
 ls -a   # list all files, including hidden files
