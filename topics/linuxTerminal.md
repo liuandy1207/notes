@@ -94,16 +94,19 @@ rm -r [DIRECTORY]    # remove directory (and all files inside)
 
 ## Find & Globbing
 ```bash
+find [EXPRESSION]    # search for files in a file hierarchy
+
 ?        # single wildcard character
 *        # any amount of wildcard characters
 [SET]    # one character from SET
 [!SET]   # one character NOT from SET
 
-find [EXPRESSION]    # search for files in a file hierarchy
-
 ```
 
 ## `egrep`
+Escape special characters with `\`.
+Double quotes around patterns is recommended. 
+
 ```bash
 egrep "[PATTERNS]" [FILES]      # output lines that match a pattern
 egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
@@ -116,7 +119,6 @@ egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
 "[abc]"        # any single character from the set
 "[abc]{n}"     # n characters from the set
 "[^abc]"       # any single character NOT from the set
-# escape special characters with \
 
 "abc"*         # preceding subexpression can be repeated 0 or more times
 "abc"+         # preceding subexpression can be repeated 1 or more times
