@@ -66,7 +66,7 @@ rm [FILE]            # remove file
 rm -r [DIRECTORY]    # remove directory (and all files inside)
 ```
 
-## Redirection 
+## Redirection & Pipes
 ```bash
 < [FILE]   # redirects the contents of FILE into stdin
 > [FILE]   # redirects the output of stdout into FILE
@@ -76,7 +76,7 @@ rm -r [DIRECTORY]    # remove directory (and all files inside)
 
 > /dev/null    # output directed to this location will be discarded
 
-|          # take the stdout of one command and make it the stdin of another command
+[COMMAND1] | [COMMAND2]    # take the stdout of one command and make it the stdin of another command
 
 ```
 
