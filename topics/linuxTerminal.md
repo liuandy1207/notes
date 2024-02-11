@@ -81,3 +81,32 @@ find [EXPRESSION]    # search for files in a file hierarchy
 
 ```
 
+## `egrep`
+```bash
+egrep "[PATTERNS]" [FILES]      # output lines that match a pattern
+egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
+
+# PATTERN COMPONENTS / REGULAR EXPRESSIONS
+"^abc"         # the pattern must exist at the start of the line
+"abc$          # line must end with the pattern
+"abc"|"cba"    # "or"
+"."            # any single character
+"[abc]"        # any single character from the set
+"[abc]{n}"     # n characters from the set
+"[^abc]"       # any single character NOT from the set
+# escape special characters with \
+
+"abc"*         # preceding subexpression can be repeated 0 or more times
+"abc"+         # preceding subexpression can be repeated 1 or more times
+"abc"?         # preceding subexpression can be repeated 0 or 1 times
+
+```
+
+
+
+
+
+
+
+
+
