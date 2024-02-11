@@ -12,11 +12,12 @@ cd [DIRECTORY]    # change directory
 ```
 
 ## Commands
+Embedded commands get executed first in an expression. After execution, their value in the expression is replaced by the commands output.
+
 ```bash
 man [COMMAND]       # show command manual
 
-# EMBEDDED COMMAND
-$([COMMAND_EXPRESSION])    # gets executed first in an expression, then replaced by its output in the expression
+$([COMMAND_EXPRESSION])    # embedded command
 
 ctrl + a            # go to the beginning of the line
 ctrl + e            # go to the end of the line
@@ -28,10 +29,17 @@ ctrl + l            # clear screen (by scrolling down)
 
 ## Permissions
 File permissions can be viewed by using `ls -l`. 
+
 ![image](https://github.com/liuandy1207/notes/assets/72530429/8095f10b-fa26-499e-9b00-78bb798a8ad4)
+![image](https://github.com/liuandy1207/notes/assets/72530429/da874e9c-f5d3-4fc2-9b8a-f79a84e4f93f)
+
+For directories
 
 ```bash
-
+r    # read permission granted
+w    # write permission granted
+x    # execute permission granted
+-    # permission NOT granted
 
 ```
 
