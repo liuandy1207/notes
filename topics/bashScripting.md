@@ -51,9 +51,38 @@ read -p "PROMPT" VARIABLE 		# outputs PROMPT, reads user input, and stores it in
 read													# reads user input and stores it in ${REPLY}
 
 ```
+## Conditional Operators
+```bash
+==, !=       # string equality and inequality
+-eq, -ne     # integer equality and inequality
+-gt, -ge     # integer > and >=
+-lt, -le     # integer < and <=
+!            # negation
+-e           # file exists
+-d           # file exists and is a directory
+-f           # file exists and is a regular file
+-r, -w, -x   # file exists and is readable/writeable/executable
+-z           # check if length of a string is 0
 
+&&           # and
+||           # or
 
+```
 
+## Conditional Statements
+```bash
+test 1 -eq 1      # produces no output, but returns 0 in ${?} (true/success)
+[ 1 -eq 1 ]       # same command as above, but different syntax (note the necessary whitespace)
+
+if [ CONDITION ]; then
+  STATEMENTS
+elif [ CONDITION ]; then
+  STATEMENTS
+else
+  STATEMENTS
+fi
+
+```
 
 
 
