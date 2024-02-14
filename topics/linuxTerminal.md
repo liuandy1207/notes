@@ -118,6 +118,7 @@ find [EXPRESSION]    # search for files in a file hierarchy
 ```bash
 egrep "[PATTERNS]" [FILES]      # output lines that match a pattern
 egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
+egrep -w "[PATTERNS]" [FILES]   # search by words
 
 # PATTERN COMPONENTS / REGULAR EXPRESSIONS
 "^abc"         # the pattern must exist at the start of the line
