@@ -22,7 +22,7 @@ Example:
 clang main.c -I/u2/cs136l/pub/common/cs136.o -o myprogram
 
 ```
-THE ORDER OF COMPILER ARGUMENTS DOES NOT MATTER (aside from `-o`)!!! <br>
+The order of compiler arguments does NOT matter (except for `-o`). <br>
 
 Do not provide a direct path to any `.h` header files. Only provide their directory. <br>
 Notice the syntax of `-I` in the example.
