@@ -15,12 +15,14 @@ If input is required `.in` files can be directed into the executable. `.args` an
 -std=C99       # comply with the C 1999 standard
 -g             # generate source level debug info (line numbers)
 -Wall          # warn all, do not supress any warnings
--o NAME        # rename the executable to the next given argument
+-o NAME        # rename the produced executable to the next given argument
 -I/PATH        # provide a path to a directory that contains any necessary .h header files
 
 Example:
 clang main.c -I/u2/cs136l/pub/common/cs136.o -o myprogram
 
 ```
+THE ORDER OF COMPILER ARGUMENTS DOES NOT MATTER (aside from `-o`)!!! <br>
+
 Do not provide a direct path to any `.h` header files. Only provide their directory. <br>
 Notice the syntax of `-I` in the example.
