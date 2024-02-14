@@ -3,7 +3,7 @@ The `clang` compiler can be used to compile C-based files into an executable.
 ```bash
 clang FILE.c              # compiles the C file FILE.c
 ./a.out                   # executes the compiled file, notice the ./
-./a.out < test.in         # providing input for execution of a.out
+./a.out < FILE.in         # providing input for execution of a.out
 
 ```
 The default output file is titled `a.out`. <br>
