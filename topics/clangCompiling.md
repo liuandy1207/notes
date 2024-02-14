@@ -25,4 +25,4 @@ clang main.c -I/u2/cs136l/pub/common/cs136.o -o myprogram
 The order of compiler arguments does NOT matter (except for `-o`). <br>
 
 Do not provide a direct path to any `.h` header files. Only provide their directory. <br>
-Notice the syntax of `-I` in the example.
+Notice the syntax of `-I` in the example. The path is connected to `-I`.
