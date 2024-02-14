@@ -51,6 +51,7 @@ read -p "PROMPT" VARIABLE 		# outputs PROMPT, reads user input, and stores it in
 read													# reads user input and stores it in ${REPLY}
 
 ```
+The default variable for `read` is `${REPLY}`.
 ## Conditional Operators
 ```bash
 ==, !=       # string equality and inequality
