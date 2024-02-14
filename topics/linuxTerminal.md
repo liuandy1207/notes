@@ -43,9 +43,9 @@ g    # group
 o    # other
 a    # all
 
-chmod u+r [THING]   # add read permission for user
-chmod u-r [THING]   # revoke read permission for user
-chmod u=r [THING]   # set permission to r-- for user
+chmod u+r THING     # add read permission for user
+chmod u-r THING     # revoke read permission for user
+chmod u=r THING     # set permission to r-- for user
 
 ```
 For directories, execute permission allows entrance into the directory, but files may not be visible. <br>
@@ -73,9 +73,9 @@ shuf [FILES]                   # output each line from the files in random order
 shuf -n [NUMBER] [FILES]           # output NUMBER lines in random order
 
 # CREATE
-mkdir DIRECTORY    # create directory
-touch FILE         # create empty file, if FILE does not already exist
-zip NAME PATH      # create a zip file named NAME
+mkdir [DIRECTORY]    # create directory
+touch [FILE]         # create empty file, if FILE does not already exist
+zip [NAME] [PATH]    # create a zip file named NAME
 
 # COPY
 cp [SOURCE/FILE] [DESTINATION/FILE]    # create a copy of the source at destination
