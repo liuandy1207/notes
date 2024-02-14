@@ -88,6 +88,9 @@ rm -r [DIRECTORY]    # remove directory (and all files inside)
 
 ## Redirection & Pipes
 ```bash
+&          # stdout
+&2         # stderr
+
 < [FILE]   # redirects the contents of FILE into stdin
 > [FILE]   # redirects the output of stdout into FILE
 2> [FILE]  # redirects the output of stderr into FILE
