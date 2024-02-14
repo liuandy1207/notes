@@ -57,7 +57,7 @@ read													# reads user input and stores it in ${REPLY}
 -eq, -ne     # integer equality and inequality
 -gt, -ge     # integer > and >=
 -lt, -le     # integer < and <=
-!            # negation
+!            # negation, can be used with other operators
 -e           # file exists
 -d           # file exists and is a directory
 -f           # file exists and is a regular file
