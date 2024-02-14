@@ -1,7 +1,5 @@
 ## `clang` Compiler
-The `clang` compiler can be used to compile C-based files into an executable. <br>
-
-If input is required `.in` files can be directed into the executable. `.args` and `.out` files can also be applied.
+The `clang` compiler can be used to compile C-based files into an executable.
 ```bash
 clang main.c              # compiles the C file main.c
 ./a.out                   # executes the compiled file, notice the ./
@@ -9,6 +7,8 @@ clang main.c              # compiles the C file main.c
 
 ```
 The default output file is titled `a.out`. <br>
+
+If input is required `.in` files can be directed into the executable. `.args` and `.out` files can also be applied.
 
 ## Compiler Arguments
 ```bash
