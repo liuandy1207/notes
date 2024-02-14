@@ -1,7 +1,7 @@
 ## `clang` Compiler
 The `clang` compiler can be used to compile C-based files into an executable.
 ```bash
-clang main.c              # compiles the C file main.c
+clang FILE.c              # compiles the C file FILE.c
 ./a.out                   # executes the compiled file, notice the ./
 ./a.out < test.in         # providing input for execution of a.out
 
