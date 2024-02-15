@@ -50,6 +50,7 @@ struct posn q = {3, 4};
 p = q;   // copies all fields from q
 
 ```
+NOTE: comparators and `printf` do NOT work with structures. You must define your own. <br>
 
 No memory is reserved at declaration, **only reserved at definition**. <br>
 Memory size depends on the **order of the fields** because C will reserve extra space to **enforce alignment**. <br>
