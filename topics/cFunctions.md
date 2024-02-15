@@ -13,7 +13,6 @@ sizeof(TYPE);
 sizeof(IDENTIFIER);
 
 ```
-The size of `int` varies between machines and OSs, but most systems use a 32-bit `int`.
 
 ## Field Access Operator - `.`
 ```C
@@ -31,3 +30,21 @@ p.x      // access field x
 p.y = 1  // change field y to 1
 
 ```
+
+## Address Operator - `&`
+Returns the adress of an identifier in memory in hex. 
+```C
+int val = 1;
+printf("Address of val: %p\n", &val);
+
+```
+
+
+
+
+
+
+
+
+
+
