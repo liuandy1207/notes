@@ -62,7 +62,11 @@ struct posn {
   int y;
 };
 
-struct 
+struct posn my_posn = {1, 2};
+struct posn *pposn = &my_posn;
+
+pposn->x    // access field x from my_posn
+(*pposn).x  // an equivalent expression, brackets necessary because of precedence
 
 ```
 
