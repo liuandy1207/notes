@@ -23,6 +23,7 @@ float pi = 3.14159f;   // f-suffix defines floats
 ```
 ## Data Type - `struct`
 ```C
+// the declaration occurs outside of any functions
 struct STRUCT_IDENTIFIER {
   TYPE FIELD1;
   TYPE FIELD2;
