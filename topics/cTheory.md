@@ -23,12 +23,12 @@ float pi = 3.14159f;   // f-suffix defines floats
 ```
 ## Data Type - `struct`
 ```C
-// the declaration occurs outside of any functions
 struct STRUCT_IDENTIFIER {
   TYPE FIELD1;
   TYPE FIELD2;
   ...
 };     // notice closing semicolon
+// NOTE: the above declaration occurs outside of any functions
 
 // notice inclusion of keyword struct
 struct STRUCT_IDENTIFIER INSTANCE = {VALUE1, VALUE2, ...}; 
