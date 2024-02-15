@@ -1,6 +1,7 @@
 # C
 - [Theory](./topics/cTheory.md)
 - [Basics](./topics/cBasics.md)
+- [Functions](./topics/cFunctions.md)
 - [Pointers](./topics/cPointers.md)
   
 # Linux
