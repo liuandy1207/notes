@@ -68,6 +68,14 @@ printf("This is a number: %d", 1);
 
 ```
 
+## Variable Initialization
+```C
+TYPE IDENTIFIER = TYPE_VALUE;   // declaration + initialization
+
+const TYPE IDENTIFIER = TYPE_VALUE; // for constants
+
+```
+If a variable is declared inside a function, it is **local**. Otherwise, it is **global**. 
 
 
 
