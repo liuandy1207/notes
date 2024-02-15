@@ -51,6 +51,21 @@ printf("Value of val: %d", *pval);
 
 ```
 
+## Indirection Selection Operator - `->`
+Returns a field from a pointer that points to a `struct`.
+```C
+pSTRUCT_IDENTIFIER->FIELD
+
+// EXAMPLE
+struct posn {
+  int x;
+  int y;
+};
+
+struct 
+
+```
+
 
 
 
