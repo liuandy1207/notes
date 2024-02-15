@@ -14,3 +14,17 @@ sizeof(IDENTIFIER);
 
 ```
 The size of `int` varies between machines and OSs, but most systems use a 32-bit `int`.
+
+## Field Access Operator - `.`
+```C
+struct posn {
+  int x;
+  int y;
+};
+
+struct posn p = {1, 2}; // see note
+
+p.x      // access element x
+p.y
+
+```
