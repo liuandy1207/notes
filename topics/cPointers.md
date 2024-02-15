@@ -15,3 +15,23 @@ int *pval = &val;   // the pointer pval "points at" val
 ```
 
 <img width="510" alt="Screenshot 2024-02-15 at 4 00 38 PM" src="https://github.com/liuandy1207/notes/assets/72530429/c714a243-76c4-4486-bb13-c09f809c250c">
+
+## Address Operator - `&`
+Returns the adress of an identifier in memory in hex. 
+```C
+int val = 1;
+
+printf("Address of val: %p", &val);
+
+```
+
+## Indirection (Dereference) Operator - `*`
+The indeirection operator is the "inverse" of the address operator. <br>
+Returns the value of a pointer's address.
+```C
+int val = 1;
+int *pval = &val;
+
+printf("Value of val: %d", *pval);
+
+```
