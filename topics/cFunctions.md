@@ -1,3 +1,27 @@
+## Text Output - `printf`
+Prints to standard output. 
+```C
+printf("STRING");
+
+// EXAMPLE
+printf("Hello world!");
+printf("This is a number: %d", 1);
+
+// Input Placeholders
+%d      // int
+%c      // char
+%f      // float
+%p      // hex (addresses)
+
+// Special Characters
+\n      // newline character
+%%      // % sign
+\\      // \ symbol
+\"      // " mark
+\'      // ' mark
+
+```
+
 ## Division Operator - `/`
 Integer division **truncates** (rounds towards zero).
 ```C
