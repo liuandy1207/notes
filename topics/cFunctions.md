@@ -98,8 +98,9 @@ pposn->x    // access field x from my_posn
 Reads input froms standard input. <br>
 Requires a pointer to a variable to store the value read in from stdin. 
 ```C
-int VARNAME;
-scanf("%d", &VARNAME);   // reads in an integer, stores it in VARNAME
+scanf("%d", &input);   // reads in one integer, stores it in the variable input
+scanf("&c", &input);   // reads in one character, including whitespace
+scanf(" &c, &input);   // reads in one character, ignoring whitespace
 
 ```
 Multiple format specifiers can be used to read in more than one value. <br>
