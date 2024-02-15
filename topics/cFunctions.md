@@ -1,5 +1,10 @@
 ## Division Operator - `/`
 Integer division **truncates** (rounds towards zero).
+```C
+9 / 10 = 0
+(-9) / 10 = 0
+
+```
 
 ## Size Operator - `sizeof()`
 Returns the number of bytes required to store the input value.
