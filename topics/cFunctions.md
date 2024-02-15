@@ -35,7 +35,19 @@ p.y = 1  // change field y to 1
 Returns the adress of an identifier in memory in hex. 
 ```C
 int val = 1;
-printf("Address of val: %p\n", &val);
+
+printf("Address of val: %p", &val);
+
+```
+
+## Indirection (Dereference) Operator - `*`
+The indeirection operator is the "inverse" of the address operator. <br>
+Returns the value of a pointer's address.
+```C
+int val = 1;
+int *pval = &val;
+
+printf("Value of val: %d", *pval);
 
 ```
 
