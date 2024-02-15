@@ -23,17 +23,17 @@ float pi = 3.14159f;   // f-suffix defines floats
 ```
 ## Data Type - `struct`
 ```C
-struct IDENTIFIER {
+struct STRUCT_IDENTIFIER {
   TYPE FIELD1;
   TYPE FIELD2;
   ...
 };     // notice closing semicolon
 
 // notice inclusion of keyword struct
-struct IDENTIFIER INSTANCE = {VALUE1, VALUE2, ...}; 
+struct STRUCT_IDENTIFIER INSTANCE = {VALUE1, VALUE2, ...}; 
 
 // intialize without ordering fields, any ommitted fields are automatically 0
-struct IDENTIFIER INSTANCE = {.FIELD2 = VALUE 2};
+struct STRUCT_IDENTIFIER INSTANCE = {.FIELD2 = VALUE 2};
 
 
 
