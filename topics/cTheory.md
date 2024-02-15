@@ -52,8 +52,8 @@ p = q;   // copies all fields from q
 ```
 NOTE: comparators and `printf` do NOT work with structures. You must define your own. <br>
 
-No memory is reserved at declaration, **only reserved at definition**. <br>
-Memory size depends on the **order of the fields** because C will reserve extra space to **enforce alignment**. <br>
+No memory is reserved when a structure is declared. Memory is only reserved **at definition**. <br>
+The required memory for a `struct` depends on the **order of the fields** because C will reserve extra space to **enforce alignment**. <br>
 
 <img width="420" alt="Screenshot 2024-02-06 at 11 52 41 AM" src="https://github.com/liuandy1207/notes/assets/72530429/f0cb7b0a-0363-4d7c-96d2-88d88de9df90">
 
