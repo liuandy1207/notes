@@ -57,14 +57,11 @@ In the figure above, a dereferentiatoin and an integer assignment is performed. 
 Aliasing is when multiple pointers point to the same data in memory. 
 
 ## Pass By Value vs. Pass By Reference
-In pass by value, a **copy** of each argument is passed. <br>
+In pass by value, a **copy** of each argument is passed to the function, and the function returns the desired value to the caller. <br>
+
 In pass by reference, a **reference** (pointer) to the stack frame of the caller function is passed. <br>
-
-
-
-Pass by value returns the desired value to the caller. <br>
-
-Pass by reference directly writes the desired value into the stack frame of the caller. This allows multiple data points to be returned to a caller function, instead of just one. <br>
+This allows the function to directly write the desired value into the caller's stack frame. <br>
+This also allows more data to be returned to a caller function instead of just one. <br>
 
 ASIDE: Functions must **never** return an **address within its own stack frame**.
 
