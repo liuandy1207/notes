@@ -27,10 +27,12 @@ No memory is reserved at declaration, only reserved and definition. <br>
 Memory size depends on the **order of the fields** because C will reserve extra space to enforce alignment. <br>
 
 <img width="420" alt="Screenshot 2024-02-06 at 11 52 41 AM" src="https://github.com/liuandy1207/notes/assets/72530429/f0cb7b0a-0363-4d7c-96d2-88d88de9df90">
+
 In the figure above, `char` only needs 1 byte, but 4 are reserved to enforce alignment. <br>
 
 <img width="360" alt="Screenshot 2024-02-06 at 11 54 06 AM" src="https://github.com/liuandy1207/notes/assets/72530429/196946ad-46d1-45ae-a6c2-b0cb41f59032">
-In the figure above, two of the fields are `char` for each `struct`. `s1` has the `char` seperated and `s2` has them together. <br>
+
+In the figure above, two of the fields are `char` for each `struct`. `s1` has the `char`s seperated and `s2` has them together. <br>
 The `char`s that are apart will require 4 bytes of space each to enforce alignment, but the `char`s that are together will be packed together into one slot of 4 bytes. 
 
 
