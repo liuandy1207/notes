@@ -7,7 +7,7 @@ printf("STRING");
 printf("Hello world!");
 printf("This is a number: %d", 1);
 
-// Input Placeholders
+// Format Specifiers (multiple can be used)
 %d      // int
 %c      // char
 %f      // float
@@ -94,7 +94,17 @@ pposn->x    // access field x from my_posn
 
 ```
 
+## Input - `scanf`
+Reads input froms standard input. <br>
+Requires a pointer to a variable to store the value read in from stdin. 
+```C
+int VARNAME;
+scanf("%d", &VARNAME);   // reads in an integer, stores it in VARNAME
 
+```
+Multiple format specifiers can be used to read in more than one value. <br>
+
+`scanf` either returns the quantity of values successfully read OR the constant `EOF` to indicate that the End Of File has been reached. Always check this value. 
 
 
 
