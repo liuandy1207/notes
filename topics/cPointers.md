@@ -68,8 +68,41 @@ Often, pass by reference functions use the built-in `return` to return exit code
 ASIDE: Functions must **never** return an **address within its own stack frame**.
 
 
+## Passing Structures
+Passing large structures increases the size of the stack frame, especially in recursion, which can potentially cause stack overflow. <br>
+To avoid structure copying, the address of a structure is typically passed instead of a copy, allowing direct field mutation (using the indirection selection operator `->`). 
 
+## `const` Pointers
+It is good style to add `const` in front of parameters (even those passed by value) to communicate (and enforce) that some aspect does not change. See below for details.
+```C
+int *ptr = &i;                // ptr can point to any MUTABLE int
 
+const int *ptr = &i;          // ptr can point to any int, but it cannot be modified via *ptr
+
+int * const ptr = &i;         // ptr always points to mutable int i
+
+const int * const ptr = &i;   // ptr always points at int i, which cannot be modified via *ptr
+
+const int * const * const pptr = &ptr; // prevents mutation of the underlying value at any level of indirection
+
+```
+
+## Function Pointers
+Function pointers store the starting address of a function (that already exists). <br>
+The function pointer includes the **return type** and **all parameter types**.
+```C
+TYPE (*fp_IDENTIFIER)(TYPE_PARAM1, TYPE_PARAM2, ...);
+
+// EXAMPLE
+int (*my_func)(int, int) = NULL;
+my_func = my_add;
+my_func(1, 2);   // produces 3
+my_func = my_sub;
+my_func(1, 2);   // produces -1
+
+```
+
+Functions that take function pointers as parameters are called **higher-order functions**. 
 
 
 
