@@ -1,5 +1,7 @@
-# Programming
-- [C](./topics/cProgramming.md)
+# C
+- [Theory](./topics/cTheory.md)
+- [Basics](./topics/cBasics.md)
+- [Pointers](./topics/cPointers.md)
   
 # Linux
 ### **Administration**
