@@ -29,26 +29,6 @@ const TYPE IDENTIFIER = TYPE_VALUE; // for constants
 ```
 If a variable is declared inside a function, it is **local**. Otherwise, it is **global**. 
 
-## Text I/O with `printf`
-```C
-printf("Hello world!");
-printf("This is a number: %d", 1);
-
-// Input Placeholders
-%d      // int
-%c      // char
-%f      // float
-%p      // hex (addresses)
-
-// Special Characters
-\n      // newline character
-%%      // % sign
-\\      // \ symbol
-\"      // " mark
-\'      // ' mark
-
-```
-
 ## Boolean Operators
 ```C
 ||     // or
