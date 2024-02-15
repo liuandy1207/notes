@@ -63,6 +63,8 @@ In pass by reference, a **reference** (pointer) to the stack frame of the caller
 This allows the function to directly write the desired value into the caller's stack frame. <br>
 This also allows more data to be returned to a caller function instead of just one. <br>
 
+Often, pass by reference functions use the built-in `return` to return exit codes while using the references to obtain the desired function effects. <br>
+
 ASIDE: Functions must **never** return an **address within its own stack frame**.
 
 
