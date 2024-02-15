@@ -17,6 +17,9 @@ The size of `int` varies between machines and OSs, but most systems use a 32-bit
 
 ## Field Access Operator - `.`
 ```C
+STRUCT_IDENTIFIER.FIELD    // access FIELD of STRUCT_IDENTIFIER
+
+// EXAMPLE
 struct posn {
   int x;
   int y;
@@ -24,7 +27,7 @@ struct posn {
 
 struct posn p = {1, 2}; // see note
 
-p.x      // access element x
-p.y
+p.x      // access field x
+p.y = 1  // change field y to 1
 
 ```
