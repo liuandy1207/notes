@@ -1,6 +1,7 @@
 ## Division Operator - `/`
 Integer division **truncates** (rounds towards zero).
 
+
 ## Size Operator - `sizeof()`
 Returns the number of bytes required to store the input value.
 ```C
