@@ -15,16 +15,44 @@ Typically used to store ASCII characters (indicated by single qutoes `'`). <br>
 ## Data Type - `float`
 - 32-bit, 4 bytes
 
-Susceptible to accumulating precision errors. `double` has better precision, but is still inexact. 
+Susceptible to accumulating **precision errors**. `double` has better precision, but is still inexact. 
   
 ```C
 float pi = 3.14159f;   // f-suffix defines floats
 
 ```
 ## Data Type - `struct`
-Custom data type. <br>
-No memory is reserved at declaration, only reserved and definition. <br>
-Memory size depends on the **order of the fields** because C will reserve extra space to enforce alignment. <br>
+```C
+struct IDENTIFIER {
+  TYPE FIELD1;
+  TYPE FIELD2;
+  ...
+};     // notice closing semicolon
+
+// notice inclusion of keyword struct
+struct IDENTIFIER INSTANCE = {VALUE1, VALUE2, ...}; 
+
+// intialize without ordering fields, any ommitted fields are automatically 0
+struct IDENTIFIER INSTANCE = {.FIELD2 = VALUE 2};
+
+
+
+// EXAMPLE: declaration and assignment
+struct posn {
+  int x;
+  int y;
+};
+
+// {} can only be used for initialzation, it cannot be used for assignment later
+struct posn p = {1, 2};
+struct posn q = {3, 4};
+
+p = q;   // copies all fields from q
+
+```
+
+No memory is reserved at declaration, **only reserved at definition**. <br>
+Memory size depends on the **order of the fields** because C will reserve extra space to **enforce alignment**. <br>
 
 <img width="420" alt="Screenshot 2024-02-06 at 11 52 41 AM" src="https://github.com/liuandy1207/notes/assets/72530429/f0cb7b0a-0363-4d7c-96d2-88d88de9df90">
 
