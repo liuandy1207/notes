@@ -129,7 +129,7 @@ egrep -i "REG_EX" FILES         # ignore case distinctions
 "abc"?         # preceding subexpression can be repeated 0 or 1 times
 
 ```
-Double quotes around regular expressions is recommended. <br>
+DOUBLE QUOTES around regular expressions is recommended. <br>
 Escape special characters with `\`.
 
 
