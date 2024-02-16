@@ -8,7 +8,7 @@
 ..         # parent directory
 
 pwd               # print full path to the working directory
-cd [DIRECTORY]    # change directory
+cd DIRECTORY      # change directory
 ```
 
 ## Keyboard Shortcuts
@@ -43,8 +43,8 @@ chmod u-r THING     # revoke read permission for user
 chmod u=r THING     # set permission to r-- for user
 
 ```
-For directories, execute permission allows entrance into the directory, but files may not be visible. <br>
-Three [0-7] digits can be used to specify permissions. Each digit represents binary for `rwx` of `u/g/o`.
+FOR DIRECTORIES, execute permission allows entrance into the directory, but files may NOT be visible. <br>
+Three [0-7] digits can be used to specify permissions. Each digit represents BINARY for `rwx` of `u/g/o`.
 
 
 ## Files
@@ -55,30 +55,31 @@ ls -a   # list all files, including hidden files
 ls -l   # list in long format
 
 # READ
-cat [FILES]                    # concatenate file(s) and print to stdout
-head [FILES]                   # outputs the first 10 lines of each file
-head -n [NUMBER] [FILES]           # outputs the first NUMBER lines of each file
-wc [FILES]                     # print line / word / byte counts for each file
-echo "[EXPRESSION]"            # print [EXPRESSION] to stdout
+cat FILES                      # concatenate file(s) and print to stdout
+head FILES                     # outputs the first 10 lines of each file
+head -n NUMBER FILES           # outputs the first NUMBER lines of each file
+wc FILES                       # print line / word / byte counts for each file
+echo "EXPRESSIOn"              # print EXPRESSION to stdout, quotes to preserve whitespace
 
 # ORDERING
-sort [FILE]                    # sort the lines of files
-sort -u [FILES]                    # suppress duplicates when sorting
-shuf [FILES]                   # output each line from the files in random order
-shuf -n [NUMBER] [FILES]           # output NUMBER lines in random order
+sort FILES                     # sort the lines of the files
+sort -u FILES                  # suppress duplicates when sorting
+shuf FILES                     # output each line from the files in random order
+shuf -n NUMBER FILES           # output NUMBER lines in random order
 
 # CREATE
-mkdir [DIRECTORY]    # create directory
-touch [FILE]         # create empty file, if FILE does not already exist
-zip [NAME] [PATH]    # create a zip file named NAME
+mkdir DIRECTORY    # create directory titled DIRECTORY
+touch FILE         # if FILE does not already exist, create an empty file titled FILE
+zip ZIP PATHS      # create a zip file titled ZIP
+unzip ZIP          # unzip zip file ZIP
 
 # COPY
-cp [SOURCE/FILE] [DESTINATION/FILE]    # create a copy of the source at destination
-mv [SOURCE/FILE DESTINATION/FILE]      # move source to destination or rename (if source = destiation)
+cp SOURCE/FILE DESTINATION/FILE      # create a copy of the source at destination
+mv SOURCE/FILE DESTINATION/FILE      # move source to destination or rename (if SOURCE = DESTINATION)
 
 # DELETE
-rm [FILE]            # remove file
-rm -r [DIRECTORY]    # remove directory (and all files inside)
+rm FILE              # remove file
+rm -r DIRECTORY      # remove directory (and all files inside)
 ```
 
 ## Redirection & Pipes
@@ -86,50 +87,49 @@ rm -r [DIRECTORY]    # remove directory (and all files inside)
 &          # stdout
 &2         # stderr
 
-< [FILE]   # redirects the contents of FILE into stdin
-> [FILE]   # redirects the output of stdout into FILE
-2> [FILE]  # redirects the output of stderr into FILE
-&> [FILE]  # redirects the output of stdout and stderr into FILE
->>         # concatenate, instead of overwriting
+< FILE     # redirects the contents of FILE into stdin
+> FILE     # redirects the output of stdout into FILE
+2> FILE    # redirects the output of stderr into FILE
+&> FILE    # redirects the output of stdout *and* stderr into FILE
 
-> /dev/null    # output directed to this location will be discarded
+>>             # concatenate, instead of overwriting
+/dev/null      # output directed to this location will be discarded
 
-[COMMAND1] | [COMMAND2]    # take the stdout of one command and make it the stdin of another command
+COMMAND1 | COMMAND2    # take the stdout of one command and make it the stdin of another command
 
 ```
 
 ## Find & Globbing
 ```bash
-find [EXPRESSION]    # search for files in a file hierarchy
+find EXPRESSION    # search for files in a file hierarchy
 
 ?        # single wildcard character
 *        # any amount of wildcard characters
-[abc]    # one character from the set
-[!abc]   # one character NOT from the set
+[abc]    # one character from the set abc
+[!abc]   # one character NOT from the set abc
 
 ```
 
 ## `egrep`
 ```bash
-egrep "[PATTERNS]" [FILES]      # output lines that match a pattern
-egrep -i "[PATTERNS]" [FILES]   # ignore case distinctions
-egrep -w "[PATTERNS]" [FILES]   # search by words
+egrep "REG_EX" FILES            # output lines that match a pattern
+egrep -i "REG_EX" FILES         # ignore case distinctions
 
-# PATTERN COMPONENTS / REGULAR EXPRESSIONS
+# REGULAR EXPRESSIONS
 "^abc"         # the pattern must exist at the start of the line
 "abc$"         # line must end with the pattern
-"abc"|"cba"    # "or"
+"abc"|"cba"    # pattern abc or pattern cba
 "."            # any single character
-"[abc]"        # any single character from the set
-"[abc]{n}"     # n characters from the set
-"[^abc]"       # any single character NOT from the set
+"[abc]"        # any single character from the set abc
+"[abc]{n}"     # n characters from the set abc
+"[^abc]"       # any single character NOT from the set abc
 
 "abc"*         # preceding subexpression can be repeated 0 or more times
 "abc"+         # preceding subexpression can be repeated 1 or more times
 "abc"?         # preceding subexpression can be repeated 0 or 1 times
 
 ```
-Double quotes around patterns is recommended. <br>
+Double quotes around regular expressions is recommended. <br>
 Escape special characters with `\`.
 
 
