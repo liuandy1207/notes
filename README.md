@@ -10,3 +10,6 @@
 ### **Tools**
 -  [bash - Scripting](./topics/bashScripting.md)
 -  [clang - C Compiler](./topics/clangCompiling.md)
+
+# Git
+- [Theory](./topics/gitTheory.md)
