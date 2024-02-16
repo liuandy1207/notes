@@ -11,13 +11,9 @@ pwd               # print full path to the working directory
 cd [DIRECTORY]    # change directory
 ```
 
-## Commands & Keyboard Shortcuts
+## Keyboard Shortcuts
 
 ```bash
-man [COMMAND]       # show command manual
-
-$([COMMAND_EXPRESSION])    # embedded command
-
 ctrl + a            # go to the beginning of the line
 ctrl + e            # go to the end of the line
 option + ←          # jump word left
