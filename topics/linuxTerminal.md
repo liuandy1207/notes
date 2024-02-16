@@ -11,7 +11,7 @@ pwd               # print full path to the working directory
 cd [DIRECTORY]    # change directory
 ```
 
-## Commands
+## Commands & Keyboard Shortcuts
 
 ```bash
 man [COMMAND]       # show command manual
