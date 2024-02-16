@@ -131,3 +131,11 @@ egrep -w "[PATTERNS]" [FILES]   # search by words
 ```
 Double quotes around patterns is recommended. <br>
 Escape special characters with `\`.
+
+
+
+
+
+man [COMMAND]       # show command manual
+
+$([COMMAND_EXPRESSION])    # embedded command
