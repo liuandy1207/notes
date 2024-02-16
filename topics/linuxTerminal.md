@@ -25,7 +25,6 @@ option + →          # jump word right
 ctrl + l            # clear screen (by scrolling down)
 
 ```
-**Embedded commands** get executed first in an expression. After execution, the embedded command is replaced by its output in the expression.
 
 ## Permissions
 File permissions can be viewed by using `ls -l`. 
