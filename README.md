@@ -13,4 +13,5 @@
 
 # Git
 - [Theory](./topics/gitTheory.md)
+- [Configuration](./topics/gitConfiguration.md)
 - [Commands](./topics/gitCommands.md)
