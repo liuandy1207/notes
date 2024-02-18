@@ -108,4 +108,4 @@ while [ $x -le $1 ]; do
 done
 
 ```
-A sequence is any list of items seperated by whitespace.
+A SEQUENCE is any list of items seperated by whitespace.
