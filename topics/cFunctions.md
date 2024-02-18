@@ -7,7 +7,7 @@ printf("STRING");
 printf("Hello world!");
 printf("This is a number: %d", 1);
 
-// Format Specifiers (multiple can be used)
+// Format Specifiers (multiple can be used, specify each value in order)
 %d      // int
 %c      // char
 %f      // float
