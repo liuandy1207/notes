@@ -2,7 +2,7 @@
 `bash` shell scripts are plain text files that contain a sequence of `bash` shell commands. <br>
 
 When execute permissions are given, scripts can be exeucted through a direct path. <br>
-Otherwise, scripts can be executed through `bash [FILENAME]`. <br>
+Otherwise, scripts can be executed through `bash FILENAME`. <br>
 
 By convention, these files end with `.sh`. <br>
 ```bash
