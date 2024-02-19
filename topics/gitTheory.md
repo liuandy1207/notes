@@ -19,6 +19,7 @@
 - The set of changes to be committed. 
 
 ## Git System
+<br>
 
 ![git-diagram](https://github.com/liuandy1207/notes/assets/72530429/24e9079d-8946-4677-8c72-ef1674be29c2)
 
