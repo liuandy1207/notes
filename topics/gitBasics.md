@@ -29,6 +29,10 @@ List differences between staging area (working directory) and the repo.
 ## `git log`
 Show list of all previous commits. 
 
+## `git diff`
+If files were modified but were not staged (`git add`ed_, then show differences between current working directory and last commit. <br>
+If files were modified and staged, then show differences between between staged files and the current working directory.
+
 ## `git push` and `git pull`
 Synchronize local and remote repositories.
 
