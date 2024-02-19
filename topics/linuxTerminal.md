@@ -43,8 +43,8 @@ chmod u-r THING     # revoke read permission for user
 chmod u=r THING     # set permission to r-- for user
 
 ```
-FOR DIRECTORIES, execute permission allows entrance into the directory, but files may NOT be visible. <br>
-Three [0-7] digits can be used to specify permissions. Each digit represents BINARY for `rwx` of `u/g/o`.
+For directories, execute permission allows entrance into the directory, but files may NOT be visible. <br>
+Three [0-7] digits can be used to specify permissions. Each digit represents binary for `rwx` of `u/g/o`.
 
 
 ## Files
@@ -129,7 +129,7 @@ egrep -i "REG_EX" FILES         # ignore case distinctions
 "abc"?         # preceding subexpression can be repeated 0 or 1 times
 
 ```
-DOUBLE QUOTES around regular expressions is recommended. <br>
+Using double quotes around regular expressions is recommended. <br>
 Escape special characters with `\`.
 
 
