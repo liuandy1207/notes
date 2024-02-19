@@ -1,22 +1,24 @@
-## Git
-Git is a source code management system that uses distributed version control, which means that each user maintains their own repository. <br>
-Thus, it is not required to have a master copy unlike other VCSs, however it is still quite common to have a single master repo.
+## Jargon
+### Version Control Systems (VCSs)
+- Software that tracks the changes made to a set of files over time.
+- Usages allows for code rollbacks, change comparisons, and collaboration.
 
-### Core Concepts
-1. **Repository (repo)** -> the canon version of your source code
-2. **Working Directory** -> a copy of the repo, where you make changes before saving them in the repo
-3. **Staging Area** -> a logical collection of changes from the working directory that you want to collect and work on together
+### Source Control Management (SCM) Systems
+- Software for source code version control.
 
-## Local Repository vs. Remote Repository
-**Local repositories** store personal projects.
-**Remote repositories** are set up on a central server where multiple users can access them.
+### Changeset
+- Changed files
 
-## Changeset
-The changeset is a grouping of files that represent a change to the system.
+### Repository (repo)
+- The main version of the source code.
 
+### Working Directory
+- A **COPY** of the repo, where changes are made before committing them to the repo.
 
+### Staging Area
+- The set of changes to be committed. 
 
-
-
+## Git System
+![git-diagram](https://github.com/liuandy1207/notes/assets/72530429/24e9079d-8946-4677-8c72-ef1674be29c2)
 
 
