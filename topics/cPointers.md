@@ -22,7 +22,7 @@ int *pval = &val;   // the pointer pval "points at" val
 The address operator `&` obtains the address of an identifier. <br>
 The indirection operator `*` obtains the value located at an address. <br>
 
-It is possible to have multiple levels of indirection when pointers point to other pointers before pointing at an identifier. <br>
+It is possible to have multiple levels of indirection when pointers point to other pointers. <br>
 C does not limit the number of levels of indirection. However, more than three levels is uncommon. 
 ```C
 int val = 136;
