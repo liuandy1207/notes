@@ -23,7 +23,7 @@ printf("This is a number: %d", 1);
 ```
 
 ## Division Operator - `/`
-Integer division TRUNCATES (rounds towards zero).
+Integer division truncates (rounds towards zero).
 ```C
 9 / 10 = 0
 (-9) / 10 = 0
