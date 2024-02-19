@@ -1,9 +1,9 @@
 ## Jargon
-### Version Control Systems (VCSs)
+### Version Control System (VCS)
 - Software that tracks the changes made to a set of files over time.
 - Usages allows for code rollbacks, change comparisons, and collaboration.
 
-### Source Control Management (SCM) Systems
+### Source Control Management (SCM) System
 - Software for source code version control.
 
 ### Changeset
