@@ -24,11 +24,10 @@ git commit -m "MESSAGE"
 ```
 
 ## `git status`
-List difference between staging area (working directory) and 
+List differences between staging area (working directory) and the repo. 
 
 ## `git log`
 Show list of all previous commits. 
-
 
 ## `git push` and `git pull`
 Synchronize local and remote repositories.
