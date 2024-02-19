@@ -7,7 +7,7 @@
 - [Pointers](./topics/cPointers.md)
 # Git
 - [Theory](./topics/gitTheory.md)
-- [Commands](gitBasics.md)
+- [Basics](gitBasics.md)
 - [Configuration](./topics/gitConfiguration.md)
 # Linux
 -  [Terminal](./topics/linuxTerminal.md)
