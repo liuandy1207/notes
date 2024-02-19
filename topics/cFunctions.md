@@ -96,6 +96,7 @@ pposn->x    // access field x from my_posn
 
 ## Input - `scanf`
 Reads input froms standard input. <br>
+Returns the quantity of values successfully read OR the constant `EOF` to indicate that the End Of File has been reached. Always check this value. <br>
 Requires a pointer to a variable to store the value read in from stdin. 
 ```C
 scanf("%d", &input);   // reads in one integer, stores it in the variable input
@@ -104,8 +105,6 @@ scanf(" &c", &input);   // reads in one character, ignoring whitespace
 
 ```
 Multiple format specifiers can be used to read in more than one value. <br>
-
-`scanf` either returns the quantity of values successfully read OR the constant `EOF` to indicate that the End Of File has been reached. Always check this value. 
 
 
 
