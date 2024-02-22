@@ -107,7 +107,7 @@ Requires a pointer to a variable to store the value read in from stdin. <br>
 Multiple format specifiers can be used to read in more than one value.
 
 ## Array-Index Operator - `[]`
-Access array element at a specified index. 
+Access array element at a specified index through pointer arithmetic. 
 ```C
 ARRAY[INDEX]
 
