@@ -60,7 +60,7 @@ int sum_array(int data[], const int data_len) {
 ## Two-Dimensonal Data
 It is better to map multi-dimensional data into a single dimension (array of one row). <br> 
 ```C
-(y, x) -> y * row_length + x;
+y * row_length + x; // access data entry at (y, x)
 
 ```
 
