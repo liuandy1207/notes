@@ -41,7 +41,7 @@ In the C memory model, each element of an array is placed in memory immediately 
 Dereferencing arrays is equivalent to accessing the first element of the array. 
 
 ## Arrays as Function Parameters
-When an array is passed to a function, only the ADDRESS is copied into the stack frame. <br> 
+When an array is passed to a function, only the ADDRESS OF THE FIRST ELEMENT is copied into the stack frame. <br> 
 Furthermore, you should assert these parameters to not be `NULL`. <br>
 
 If a function should not mutate the contents of an array, declare parameters with `const`. <br>
