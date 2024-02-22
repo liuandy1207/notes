@@ -104,6 +104,22 @@ my_func(1, 2);   // produces -1
 
 Functions that take function pointers as parameters are called **higher-order functions**. 
 
+## Pointer Arithmetic
+When adding an integer $i$ to a pointer $\text{ptr}$, 
+
+$$(\text{ptr} + i) = \text{ptr} + i\times \text{sizeof}(\text{ptr}) $$
+Pointers of the same type can be compared with comparison operators. <br>
+You can NOT add two pointers. 
+
+### Pointer Arithmetic with Arrays
+As a function parameter, the value of an array is the address of the first element. <br>
+Using pointer arithmetic, subsequent addresses can be obtained and dereferenced.
+```C
+EXAMPLE:
+&my_array[1] == (my_array + 1);
+my_array[1] == *(my_array + 1);    // array index operator performs pointer arithmetic
+
+```
 
 
 
