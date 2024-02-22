@@ -5,6 +5,7 @@
 - [Basics](./topics/cBasics.md)
 - [Functions](./topics/cFunctions.md)
 - [Pointers](./topics/cPointers.md)
+- [Arrays](./topics/cArrays.md)
 # Git
 - [Theory](./topics/gitTheory.md)
 - [Basics](./topics/gitBasics.md)
