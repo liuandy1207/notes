@@ -34,7 +34,10 @@ block comment
 ### Identifiers
 - Identifers must start with a letter.
 - Identifers can only contain alphanumeric characters and underscore.
-- `underscore_style` (snake case) is preferred. 
+- `underscore_style` (snake case) is preferred.
+
+### Variables
+Always initailize variables. 
 
 ### Blocks
 - `{` appears at the end of a line.
