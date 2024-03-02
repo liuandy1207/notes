@@ -1,12 +1,12 @@
 # C Operators
 
 ## Arithmetic Operators
-C uses **in-fix** notation. Normal arithmetic rules apply. <br>
+C uses **IN-FIX** notation. Normal arithmetic rules apply. <br>
 Brackets may be used to specify order of operations. 
 
 ### Division Operator - `/`
 Returns the quotient of two numbers. <br>
-&emsp; → `int` division will **truncate** (round towards zero). In other words, decimals will be cut off. 
+&emsp; → `int` division will **TRUNCATE** (round towards zero). In other words, decimals will be cut off. 
 
 ### Modulo Operator - `%`
 Returns the remainder after integer division. 
