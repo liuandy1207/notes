@@ -1,7 +1,7 @@
 # C Primitives
-C uses a **static typing** system where:
-- All types **must be known** when the file **compiles**, and
-- The type of an identifier **cannot change**. 
+C uses a **STATIC TYPING** system where:
+- All types **MUST BE KNOWN** when the file **COMPILES**, and
+- The type of an identifier **CANNOT CHANGE**. 
 
 ## Integers - `int`
 32-bits of data are interpreted as integers. <br>
@@ -14,4 +14,4 @@ C uses a **static typing** system where:
 `int` values that start with `0x` are evaluated in hexadecimal. 
 
 ## Bool - `bool`
-32-bits of data interpreted as **binary false** (`0`) or **true** (any other value).
+32-bits of data interpreted as **BINARY FALSE** (`0`) or **TRUE** (any other value).
