@@ -105,5 +105,25 @@ do {
   // ...
 } while (CONDITION);
 
+break;  // immediately terminate the innermost loop
+continue; // skips the rest of the statements in the current block
+
+
+
+for (SETUP; CONDITION; UPDATE) {
+  // ...
+}
+
 ```
 &emsp; → `do...while` statements are guarenteed to run **at least once** since the condition is checked after. 
+&emsp; → multiple definitions and expressions can be included in the setup and update of a `for` loop. Seperate with commas. 
+
+### Omitting Components of `for` Loops
+```C
+// SAMPLE VALUES
+for (; i < 100; ++i) {...}    // i was previously defined
+for (; i < 100;)              // equivalent to while (i < 100)
+for (;;) {...}                // infinite loop
+
+```
+
