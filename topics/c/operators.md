@@ -43,7 +43,17 @@ int n = 1;  // initialization
 n = 2;  // assignment
 
 ```
-Initializes a variable with a value or assigns a value to an existing variable. 
+Initializes a variable with a value or assigns a value to an existing variable.
+
+### Additional Assignment Operators
+```C
++=
+-=
+*=
+/=
+%=
+
+```
 
 
 
