@@ -37,6 +37,14 @@ q ? a : b
 ```
 Returns `a` if `q` is true, and `b` otherwise. 
 
+## Intialization & Assignment Operator - `=`
+```C
+int n = 1;  // initialization
+n = 2;  // assignment
+
+```
+Initializes a variable with a value or assigns a value to an existing variable. 
+
 
 
 
