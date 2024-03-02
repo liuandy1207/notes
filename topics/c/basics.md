@@ -23,7 +23,7 @@ RETURN_TYPE IDENTIFIER(TYPE PARAM1, TYPE PARAM2) {
 }
 
 ```
-&emsp; → The number of parameters is not limited. <br>
+&emsp; → The number of parameters is **not limited**. <br>
 &emsp; → The type of `RETURN_VALUE` must match `RETURN_TYPE`.
 
 ### `void` Functions
@@ -34,7 +34,7 @@ void IDENTIFIER(TYPE PARAM) {
 }
 
 ```
-&emsp; → No `return` statement required. Control flow is impliclty transferred back to the OS. 
+&emsp; → No `return` statement required. Control flow is **impliclty** transferred back to the OS. 
 
 ## Parameterless Functions
 ```C
