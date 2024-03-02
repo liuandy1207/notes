@@ -19,11 +19,12 @@ int main(void) {
 ```C
 RETURN_TYPE IDENTIFIER(TYPE PARAM1, TYPE PARAM2) {
   // ...
-  return RETURN_TYPE_VALUE;
+  return RETURN_VALUE;
 }
 
 ```
-&emsp; → The number of parameters is not limited. 
+&emsp; → The number of parameters is not limited. <br>
+&emsp; → The type of `RETURN_VALUE` must match `RETURN_TYPE`.
 
 ### `void` Functions
 ```C
@@ -39,7 +40,7 @@ void IDENTIFIER(TYPE PARAM) {
 ```C
 RETURN_TYPE IDENTIFIER(void) {
   \\ ...
-  return RETURN_TYPE_VALUE;
+  return RETURN_VALUE;
 }
 
 IDENTIFIER();  // do not pass void when calling the function
