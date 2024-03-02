@@ -53,6 +53,11 @@ Initializes a variable with a value or assigns a value to an existing variable.
 /=
 %=
 
+++x
+x++
+--x
+x--
+
 ```
 
 
