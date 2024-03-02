@@ -36,7 +36,7 @@ void IDENTIFIER(TYPE PARAM) {
 ```
 &emsp; → No `return` statement required. Control flow is **impliclty** transferred back to the OS. 
 
-## Parameterless Functions
+### Parameterless Functions
 ```C
 RETURN_TYPE IDENTIFIER(void) {
   \\ ...
@@ -47,9 +47,14 @@ IDENTIFIER();  // do not pass void when calling the function
 
 ```
 
-
-
-
-
-
-
+## Conditional Statements
+```C
+if (CONDITION) {
+  \\ ...
+} else if (CONDITION) {
+  \\ ...
+} else {
+  \\ ...
+}
+```
+&emsp; → Non-`void` functions requires every path to end with a `return` statement. 
