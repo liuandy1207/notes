@@ -14,4 +14,4 @@ C uses a **static typing** system where:
 `int` values that start with `0x` are evaluated in hexadecimal. 
 
 ## Bool - `bool`
-32-bits of data interpreted as binary false (`0`) or true (any other value).
+32-bits of data interpreted as **binary false** (`0`) or **true** (any other value).
