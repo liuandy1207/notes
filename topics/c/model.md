@@ -25,3 +25,8 @@ Whenever a variable is defined in C,
 2. The address of the space is associated with the identifier of the variable.
 3. The initial value of the variable is written to that address. 
 <img width="928" alt="Screenshot 2024-03-02 at 3 48 24 PM" src="https://github.com/liuandy1207/notes/assets/72530429/bcafdd51-2450-41b3-9b7d-24bbcfd466ca">
+
+### Integer Overflow
+C uses 4 bytes to store an `int`, so there are only $2^{32}$ values that can be represented. <br>
+The range of C `int` values is $\[-2^{31}, 2^{31} - 1\]$. <br>
+Any value outside of this range will result in **INTEGER OVERFLOW** and the value will be undefined.
