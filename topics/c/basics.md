@@ -1,5 +1,14 @@
 # C Basics
 
+## Side Effects
+Side effects occur when the **state** (value) of something changes. <br>
+**Procedural programming** employs side effects, while functional programming does not. 
+
+### I/O Side Effects
+Changes the state of the system by reading input or producing output. 
+### Mutation
+Changes the state of the system by modifying memory and variables. 
+
 ## Program Entry Points 
 Programs are typically executed by an Operating System through a shell or another program. <br>
 To do so, the OS needs to know where to start running the program. This is the **entry point**. <br>
