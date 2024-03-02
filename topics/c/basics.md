@@ -1,22 +1,22 @@
 # C Basics
 
 ## Side Effects
-Side effects occur when the **state** (value) of something changes. <br>
-**Procedural programming** employs side effects, while functional programming does not. 
+Side effects occur when the **STATE** (value) of something changes. <br>
+**PROCEDURAL PROGRAMMING** employs side effects, while functional programming does not. 
 
 ### I/O Side Effects
 Changes the state of the system by reading input or producing output. 
 ### Mutation
 Changes the state of the system by modifying memory and variables. <br>
-Functions that mutate global variables or depend on global variables are **impure**. 
+Functions that mutate global variables or depend on global variables are **IMPURE**. 
 
 ## Program Entry Points 
 Programs are typically executed by an Operating System through a shell or another program. <br>
-To do so, the OS needs to know where to start running the program. This is the **entry point**. <br>
+To do so, the OS needs to know where to start running the program. This is the **ENTRY POINT**. <br>
 
 In C, the entry point of a program is a special function called `main`. <br>
-Every C program must have **exactly one** `main` function. <br>
-By calling `main`, the OS transfers **control flow** to the program. After execution, it is returned to the OS. 
+Every C program must have **EXACTLY ONE** `main` function. <br>
+By calling `main`, the OS transfers **CONTROL FLOW** to the program. After execution, it is returned to the OS. 
 ```C
 int main(void) {
   // ...
@@ -30,26 +30,26 @@ int main(void) {
 TYPE IDENTIFIER = INITIAL_VALUE;
 
 ```
-Variables store **mutable** state information (values). <br>
-Variables must **always** have a value. 
+Variables store **MUTABLE** state information (values). <br>
+Variables must **ALWAYS** have a value. 
 
 ### Constants 
 ```C
 const TYPE IDENTIFIER_IN_CAPS = VALUE; 
 
 ```
-Constants store **immutable** state information. <br>
+Constants store **IMMUTABLE** state information. <br>
 Constants are recommended when applicable because they:
 - Communicate the intended use of the variable,
 - Prevent unintended mutation, and
 - May help optimize code.
 
 ### Global vs. Local
-Global data is defined **outside** of functions. <br>
-The scope of global data is anywhere **below** its definition. <br>
+Global data is defined **OUTSIDE** of functions. <br>
+The scope of global data is anywhere **BELOW** its definition. <br>
 
-Local data is defined **inside** of functions. <br>
-The scope of local data is **between definition and the end of the block**. 
+Local data is defined **INSIDE** of functions. <br>
+The scope of local data is **BETWEEN DEFINITION AND THE END OF THE BLOCK**. 
 
 ## Function Definitions
 ```C
@@ -59,7 +59,7 @@ RETURN_TYPE IDENTIFIER(TYPE PARAM1, TYPE PARAM2) {
 }
 
 ```
-&emsp; → The number of parameters is **not limited**. <br>
+&emsp; → The number of parameters is **NOT LIMITED**. <br>
 &emsp; → The type of `RETURN_VALUE` must match `RETURN_TYPE`.
 
 ### `void` Functions
@@ -70,7 +70,7 @@ void IDENTIFIER(TYPE PARAM) {
 }
 
 ```
-&emsp; → No `return` statement required. Control flow is **impliclty** transferred back to the OS. 
+&emsp; → No `return` statement required. Control flow is **IMPLICITLY** transferred back to the OS. 
 
 ### Parameterless Functions
 ```C
