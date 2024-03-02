@@ -60,3 +60,6 @@ x--
 
 ```
 &emsp; → `++x` is typically preferred over `x++`
+
+## Size Operator - `sizeof(TYPE_OR_IDENTIFIER)`
+Returns the number of bytes required to store the given data type or identifier. 
