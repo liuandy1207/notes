@@ -10,10 +10,10 @@
 
 ### Requirement Assertions
 Always assert requirements. <br>
-It is better style to have **multiple small assertions** rather than one big compound assertion.
+It is better style to have **MULTIPLE SMALL ASSERTIONS** rather than one big compound assertion.
 
 ### Common Side Effects
-Write "**may**" in front of a side effect if it is not guarenteed to occur. <br>
+Write "**MAY**" in front of a side effect if it is not guarenteed to occur. <br>
 Avoid having more than one side effect per expression. 
 - reads from the console
 - prints to the console
@@ -43,7 +43,7 @@ block comment
 ### Blocks
 - `{` appears at the end of a line.
 - `}` appers at the start of a line and is aligned with the line that started it.
-- Body statements are indented by **2 spaces**.
+- Body statements are indented by **TWO SPACES**.
 
 ### Operators
 - Spaces are required around arithmetic operators and after commas.
