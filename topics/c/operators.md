@@ -53,15 +53,10 @@ Initializes a variable with a value or assigns a value to an existing variable.
 /=
 %=
 
-++x
-x++
+++x  // increments x, then produces x
+x++  // produces x, then increments x
 --x
 x--
 
 ```
-
-
-
-
-
-
+&emsp; → `++x` is typically preferred over `x++`
