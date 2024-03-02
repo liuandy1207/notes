@@ -109,14 +109,14 @@ break;  // immediately terminate the innermost loop
 continue; // skips the rest of the statements in the current block
 
 
-
 for (SETUP; CONDITION; UPDATE) {
   // ...
 }
 
 ```
 &emsp; → `do...while` statements are guarenteed to run **at least once** since the condition is checked after. <br>
-&emsp; → multiple definitions and expressions can be included in the setup and update of a `for` loop. Seperate with commas. 
+&emsp; → Multiple definitions and expressions can be included in the setup and update of a `for` loop. Seperate with commas. <br>
+&emsp; → Using `continue` in a `for` loop will execute the update statement before jumping back to the expression.
 
 ### Omitting Components of `for` Loops
 ```C
