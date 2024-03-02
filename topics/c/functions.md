@@ -9,4 +9,7 @@ It is good style to assert requirements.
 ## Text Output Function - `printf("FORMAT_STRING)`
 Produces text output. 
 
-### Format Characters
+### Format Specifiers
+
+### Special Characters
+\n    // newline character
