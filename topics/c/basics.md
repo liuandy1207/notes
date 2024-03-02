@@ -115,7 +115,7 @@ for (SETUP; CONDITION; UPDATE) {
 }
 
 ```
-&emsp; → `do...while` statements are guarenteed to run **at least once** since the condition is checked after. 
+&emsp; → `do...while` statements are guarenteed to run **at least once** since the condition is checked after. <br>
 &emsp; → multiple definitions and expressions can be included in the setup and update of a `for` loop. Seperate with commas. 
 
 ### Omitting Components of `for` Loops
