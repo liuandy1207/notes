@@ -2,8 +2,8 @@
 
 ## Function Documentation
 ```C
-\\ IDENTIFER(PARAM, PARAM) verb (description of what the function does)
-\\ requires: any restrictions on parameters
+// IDENTIFER(PARAM, PARAM) verb (description of what the function does)
+// requires: any restrictions on parameters
 
 ```
 
