@@ -12,6 +12,7 @@ int main(void) {
   // ...
   return 0;   // exit code 0 indicates success
 }
+
 ```
 
 ## Function Definitions
@@ -20,6 +21,7 @@ RETURN_TYPE IDENTIFIER(TYPE PARAM1, TYPE PARAM2) {
   // ...
   return RETURN_TYPE_VALUE;
 }
+
 ```
 &emsp; → The number of parameters is not limited. 
 
@@ -27,7 +29,9 @@ RETURN_TYPE IDENTIFIER(TYPE PARAM1, TYPE PARAM2) {
 ```C
 void IDENTIFIER(TYPE PARAM) {
   // ...
+  return;  // optional
 }
+
 ```
 &emsp; → No `return` statement required. Control flow is impliclty transferred back to the OS. 
 
@@ -35,4 +39,16 @@ void IDENTIFIER(TYPE PARAM) {
 ```C
 RETURN_TYPE IDENTIFIER(void) {
   \\ ...
+  return RETURN_TYPE_VALUE;
 }
+
+IDENTIFIER();  // do not pass void when calling the function
+
+```
+
+
+
+
+
+
+
