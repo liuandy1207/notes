@@ -8,7 +8,7 @@ Side effects occur when the **state** (value) of something changes. <br>
 Changes the state of the system by reading input or producing output. 
 ### Mutation
 Changes the state of the system by modifying memory and variables. <br>
-Functions that mutate global variables are **impure**. 
+Functions that mutate global variables or depend on global variables are **impure**. 
 
 ## Program Entry Points 
 Programs are typically executed by an Operating System through a shell or another program. <br>
