@@ -24,6 +24,14 @@ int main(void) {
 
 ```
 
+## Variables
+```C
+TYPE IDENTIFIER = INITIAL_VALUE;
+
+```
+Variables store **mutable** state information (values). <br>
+Variables must **always** have a value. 
+
 ## Function Definitions
 ```C
 RETURN_TYPE IDENTIFIER(TYPE PARAM1, TYPE PARAM2) {
