@@ -30,3 +30,15 @@ Returns the remainder after integer division.
 >=
 
 ```
+## Ternary Conditional Operator - `?`
+```C
+q ? a : b
+
+```
+Returns `a` if `q` is true, and `b` otherwise. 
+
+
+
+
+
+
