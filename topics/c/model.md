@@ -29,4 +29,4 @@ Whenever a variable is defined in C,
 ### Integer Overflow
 C uses 4 bytes to store an `int`, so there are only $2^{32}$ values that can be represented. <br>
 The range of C `int` values is $\[-2^{31}, 2^{31} - 1\]$. <br>
-Any value outside of this range will result in **INTEGER OVERFLOW** and the value will be undefined.
+Any value outside of this range will result in **INTEGER OVERFLOW** and the value will be **UNDEFINED**.
