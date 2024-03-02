@@ -6,10 +6,27 @@ Otherwise, continues to the next line of code. <br>
 
 It is good style to assert requirements. 
 
-## Text Output Function - `printf("FORMAT_STRING)`
+## Text Output Function - `printf("FORMAT_STRING")`
 Produces text output. 
+```C
+printf("Hello World!");
+printf("This is an integer: %d", 1);
+
+```
 
 ### Format Specifiers
+Format specifiers act as a placeholder for non-`String` additional arguments to be supplemented. 
+```C
+%d    // integer
+
+```
 
 ### Special Characters
+```C
 \n    // newline character
+%%    // % character
+\\    // \ character
+\"    // " character
+\'    // ' character
+
+```
