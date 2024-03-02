@@ -75,7 +75,7 @@ void IDENTIFIER(TYPE PARAM) {
 ### Parameterless Functions
 ```C
 RETURN_TYPE IDENTIFIER(void) {
-  \\ ...
+  // ...
   return RETURN_VALUE;
 }
 
@@ -86,11 +86,24 @@ IDENTIFIER();  // do not pass void when calling the function
 ## Conditional Statements
 ```C
 if (CONDITION) {
-  \\ ...
+  // ...
 } else if (CONDITION) {
-  \\ ...
+  // ...
 } else {
-  \\ ...
+  // ...
 }
 ```
 &emsp; → Non-`void` functions requires every path to end with a `return` statement. 
+
+## Iteration
+```C
+while (CONDITION) {
+  // ...
+}
+
+do {
+  // ...
+} while (CONDITION);
+
+```
+&emsp; → `do...while` statements are guarenteed to run **at least once** since the condition is checked after. 
