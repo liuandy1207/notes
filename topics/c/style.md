@@ -37,7 +37,8 @@ block comment
 - `underscore_style` (snake case) is preferred.
 
 ### Variables
-Always initailize variables. 
+- Always initailize variables. 
+- Define variables in the smallest scope possible and as close to its first use as possible.
 
 ### Blocks
 - `{` appears at the end of a line.
