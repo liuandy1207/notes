@@ -32,6 +32,24 @@ TYPE IDENTIFIER = INITIAL_VALUE;
 Variables store **mutable** state information (values). <br>
 Variables must **always** have a value. 
 
+### Constants 
+```C
+const TYPE IDENTIFIER_IN_CAPS = VALUE; 
+
+```
+Constants store **immutable** state information. <br>
+Constants are recommended when applicable because they:
+- Communicate the intended use of the variable,
+- Prevent unintended mutation, and
+- May help optimize code.
+
+### Global vs. Local
+Global data is defined **outside** of functions. <br>
+The scope of global data is anywhere **below** its definition. <br>
+
+Local data is defined **inside** of functions. <br>
+The scope of local data is **between definition and the end of the block**. 
+
 ## Function Definitions
 ```C
 RETURN_TYPE IDENTIFIER(TYPE PARAM1, TYPE PARAM2) {
