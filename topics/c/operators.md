@@ -11,7 +11,7 @@ Returns the quotient of two numbers. <br>
 ### Modulo Operator - `%`
 Returns the remainder after integer division. 
 ```C
-(a % b) == (a - (a / b) * b);
+(a % b) = (a - (a / b) * b)
 
 ```
 ## Boolean Operators
