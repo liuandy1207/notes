@@ -10,7 +10,7 @@
 
 ### Requirement Assertions
 Always assert requirements. <br>
-It is better style to have multiple small assertions rather than one big compound assertion.
+It is better style to have **multiple small assertions** rather than one big compound assertion.
 
 ### Common Side Effects
 Write "**may**" in front of a side effect if it is not guarenteed to occur. <br>
