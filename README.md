@@ -1,4 +1,20 @@
+# C
+- [History](./topics/c/history.md)
+
+
+
+
+
+
+
+
+
+
+ignore below lowkey
+
 # Arduino
+
+
 
 # C
 - [Theory](./topics/cTheory.md)
