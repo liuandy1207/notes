@@ -85,8 +85,9 @@ Pointers of the same type can be compared with standard comparators. <br>
 However, two pointers cannot be added. <br>
 Double however, two pointers of the same type can be subtracted.
 ```math
-pp - pq = \dfrac{pp-pq}{\text{sizeof}(p)} \\
-
+pp - pq = \dfrac{pp-pq}{\text{sizeof}(p)}
+```
+```math
 p = q + i \Rightarrow p - q = i
 ```
 
