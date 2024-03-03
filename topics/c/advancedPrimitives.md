@@ -14,6 +14,10 @@ struct posn {
 // definition and initialization
 struct posn p = {3, 4};
 
+// alternate methods of initialization
+struct posn p = {.y = 4, .x = 3};
+struct posn p = {.x = 3};    // omitted fields are filled with 0
+
 ```
 &emsp; → The structure type includes the keyword `struct`. <br>
 &emsp; → No memory is reserved for the structure declaration. Memory is only reserved on definition. 
