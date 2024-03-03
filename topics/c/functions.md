@@ -17,7 +17,7 @@ printf("This is an integer: %d", 1);
 ### Format Specifiers
 Format specifiers act as a placeholder for non-`String` additional arguments to be supplemented. 
 ```C
-%d    // integer
+%d    // int
 %c    // char
 
 ```
