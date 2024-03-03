@@ -64,7 +64,14 @@ const int * const * const ptr = &ptr;   // prevents the mutation of the underlyi
 
 ```
 
+## Function Pointers
+Function pointers point to the starting address of **ALREADY DEFINED** functions. <br>
+Function pointers can be used a parameters for other (higher-order) functions. 
+```C
+RETURN_TYPE (*FUNCTION_POINTER)(PARAM1_TYPE, PARAM2_TYPE, ...);
 
+
+```
 
 
 
