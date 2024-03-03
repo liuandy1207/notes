@@ -79,7 +79,7 @@ Multi-dimensional arrays often come with various limitations. <br>
 It is better to represent multi-dimensional data in a single dimension by mapping higher dimensions down. 
 ```C
 // SAMPLE VALUES
-arr[r][c] = arr[(r * row_length) + c]
+arr[r][c] = arr[(r * row_length) + c]     // two-dimensional mapping
 
 ```
 
