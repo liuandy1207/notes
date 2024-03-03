@@ -47,6 +47,16 @@ TYPE IDENTIFIER[LENGTH] = {...};
 Global arrays become zero-filled. <br>
 Local arrays are filled with arbitrary (garbage) values from the stack.
 
+### Character Arrays - `char[]`
+Character arrays can be initialized with `""` for convenience. <br>
+However, these are **NOT** strings.
+```C
+// SAMPLE VALUES
+char pet[3] = "cat";
+char pet[3] = {'c', 'a', 't'};     // equivalent expression
+
+```
+
 
 
 
