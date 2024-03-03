@@ -27,3 +27,27 @@ Dereferencing a `NULL` pointer will crash the program.
 <img width="853" alt="Screenshot 2024-03-02 at 9 24 45 PM" src="https://github.com/liuandy1207/notes/assets/72530429/599d723c-7cd0-47a1-8a2d-68e0258922d2">
 
 &emsp; → `pi` is mutated to point at whatever `pj` is pointing at. 
+<img width="871" alt="Screenshot 2024-03-02 at 9 26 55 PM" src="https://github.com/liuandy1207/notes/assets/72530429/0b20c3be-f07b-4d83-9644-a1951520d92c">
+
+&emsp; → `*pi` is mutated to become `*pj`. That is, `i` becomes `j`.
+
+## Aliasing
+Aliasing is when multiple pointers point to the same address in memory. 
+
+## Pass by Reference
+Pass by reference occurs when pointers are passed to functions. <br>
+This allows a function to directly write into the stack frame of the caller function (side effect). <br>
+Then, this allows a function to "return" more than one value to the caller function. <br>
+
+Many functions only return integers corresponding to exit codes. They achieve their main purposes through pass by reference. 
+
+
+
+
+
+
+
+
+
+
+
