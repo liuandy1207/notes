@@ -39,6 +39,8 @@ TYPE IDENTIFIER[LENGTH] = {...};
 
 ```
 &emsp; → Definining arrays requires the length to be known beforehand. <br>
+&emsp; → Arrays may be traversed through `for` loops since the length is knonw beforehand. <br>
+&emsp; → C does **NOT** explictly track array length as part of the array structure. You must keep track separately. <br>
 &emsp; → You may initialize with AT MOST `LENGTH` elements. If there are less than `LENGTH` elements, the remaining values are initialized to `0`. <br>
 &emsp; → If `LENGTH` is not explicitly given, the compiler will impliclty calculate array length based on the number of elements provided during initialization. <br>
 &emsp; → `{}` can only be used during initalization. It can not be used for assignment. 
