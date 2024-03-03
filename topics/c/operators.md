@@ -87,7 +87,16 @@ It is possible to have multiple levels of indirection. <br>
 That is, pointers can point to pointers, which can be derferenced many times back to back. <br>
 However, it is uncommon to have more than three levels of indirection.
 
+## Indirection Selection Operator - `->`
+Returns the value of the requested field for a structure pointer. 
+```C
+// SAMPLE VALUES
+struct posn p = {3, 4};
+struct posn *pp = &p;
 
+pp->x = 3    // same as *(pp).x
+
+```
 
 
 
