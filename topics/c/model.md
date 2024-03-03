@@ -59,14 +59,14 @@ Each stack frame contains:
 - The return address (location inside the calling function).
 
 
-**Pass by Value**
+**Pass by Value** <br>
 When a stack frame is created, a **COPY** of each parameter and the return address is placed in the stack frame. <br>
 
-**Uninitialized Memory**
+**Uninitialized Memory** <br>
 For global data, C automatically initializes the variable to `0`. <br>
 However, it is good style to intialize global variables explicitly. 
 
-For local data, C writes an arbitrary initial value.  
+For local data, C writes an arbitrary (garbage) initial value from the stack.  
 
 
 
