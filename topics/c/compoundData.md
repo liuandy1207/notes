@@ -69,6 +69,7 @@ void foo (int arr[]) {      // note the inclusion of []
 
 ```
 &emsp; → You may specify an array length within the `[]`, but it will be ignored. 
+&emsp; → In C, there is no difference in writing a parameter with `TYPE *arr` or `TYPE arr[]`.
 
 ### Dereferencing Arrays
 Dereferencing an array is the same as accessing its first element at index `0`. <br>
