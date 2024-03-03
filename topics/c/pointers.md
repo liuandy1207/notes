@@ -101,6 +101,7 @@ arr[1] = *(arr + 1)
 arr[i] = *(arr + i)
 
 ```
+&emsp; → Writing a parameter with `TYPE *arr` or `TYPE arr[]` makes no difference to C. 
 
 
 
