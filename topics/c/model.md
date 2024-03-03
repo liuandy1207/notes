@@ -30,3 +30,43 @@ Whenever a variable is defined in C,
 C uses 4 bytes to store an `int`, so there are only $2^{32}$ values that can be represented. <br>
 The range of C `int` values is $\[-2^{31}, 2^{31} - 1\]$. <br>
 Any value outside of this range will result in **INTEGER OVERFLOW** and the value will be **UNDEFINED**.
+
+## Sections of Memory
+<img width="855" alt="Screenshot 2024-03-02 at 8 22 47 PM" src="https://github.com/liuandy1207/notes/assets/72530429/074c20a2-094b-4b7e-a866-9d894e619044">
+
+### Code Section
+Human-readable code is compiled into machine code just before execution. <br>
+Machine code is moved to this section of memory for execution. 
+
+### Global Constants and Global Variables Sections
+Global constants and global variables are available throughout the execution of a program. <br>
+These spaces is reserved before the program begins execution. <br>
+Space for global constants is reserved before space for global variables.<br>
+Both global memory sections are created and intialized at **COMPILE TIME**. 
+
+### Stack Frames
+Every function call generates a stack frame. <br>
+Stack frames begin at the **HIGHEST** memory address available. <br>
+Each subsequent stack frame is placed at increasingly lower addresses. <br>
+**STACK OVERFLOW** occurs when the stack grows large enough to collide with other sections of memory. 
+
+Each stack frame contains:
+- The values of each parameter
+- All local data (variables and constants) within the function block.
+- The return address (location inside the calling function).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
