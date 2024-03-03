@@ -42,6 +42,29 @@ Then, this allows a function to "return" more than one value to the caller funct
 Many functions only return integers corresponding to exit codes. They achieve their main purposes through pass by reference. <br>
 Functions must **NEVER** return addresses within its own stack frame. 
 
+To avoid structure copying, always pass the **ADDRESS** of a structure instead of a copy. 
+
+### Preventing Side Effects (`const` Pointers)
+For a non-pointer value, `const` enforces that the parameter is immutable **WITHIN** the function. <br>
+It does **NOT** require the passed parameter to be constant. 
+
+```C
+// SAMPLE VALUES
+int i = 0;
+
+int *ptr = &i;                 // ptr can point to any mutable int
+
+const int *ptr = &i;           // ptr can point to any int, but the value of the int cannot be modified through dereferencing
+
+int * const ptr = &i;          // ptr always points at mutable int i, it cannot be reassigned to another address
+
+const int * const ptr = &i;    // ptr always point at int i
+
+const int * const * const ptr = &ptr;   // prevents the mutation of the underlying value at any level of indirection 
+
+```
+
+
 
 
 
