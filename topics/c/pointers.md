@@ -77,9 +77,9 @@ RETURN_TYPE (*FUNCTION_POINTER)(PARAM1_TYPE, PARAM2_TYPE, ...);
 
 ## Pointer Arithmetic
 Adding an integer to a pointer adds the **SIZE** of whatever the pointer points to the pointer. 
-$$ 
-\text{address} = ptr + i \times ptr 
-$$
+```math
+\text{address} = ptr + i \times ptr
+```
 
 
 
