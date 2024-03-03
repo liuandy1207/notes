@@ -81,6 +81,16 @@ Adding an integer to a pointer adds the **SIZE** of whatever the pointer points 
 \text{address} = ptr + i \times ptr
 ```
 
+Pointers of the same type can be compared with standard comparators. <br>
+However, two pointers cannot be added. <br>
+Double however, two pointers of the same type can be subtracted.
+```math
+pp - pq = \dfrac{pp-pq}{\text{sizeof}(p)}
+
+p = q + i \Rightarrow p - q = i
+```
+
+
 
 
 
