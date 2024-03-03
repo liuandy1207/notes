@@ -98,6 +98,9 @@ pp->x = 3    // same as *(pp).x
 
 ```
 
+## Array-Index Operator - `[INDEX]`
+Returns the value at `INDEX` in a specific array.
+
 
 
 
