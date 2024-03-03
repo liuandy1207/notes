@@ -1,8 +1,6 @@
 # C Compound Data
 
 ## Structures
-The amount of memory reserved for a structure is **AT LEAST** the sum of the sizes in each field, but it may be **LARGER**. <br>
-No memory is reserved for the structure declaration. Memory is only reserved on definition. 
 ```C
 // SAMPLE VALUES
 
@@ -25,7 +23,11 @@ struct posn p = {.x = 3};    // omitted fields are filled with 0
 &emsp; &emsp; → Instead, fields must be accessed and mutated individually. <br>
 &emsp; → Comparators and printf do not work with structures. To achieve their purposes, you must define your own functions. 
 
-### Structure Memory Padding
+### Structure Size
+The amount of memory reserved for a structure is **AT LEAST** the sum of the sizes in each field, but it may be **LARGER**. <br>
+No memory is reserved for the structure declaration. Memory is only reserved on definition. 
+
+### Structures in Memory
 C may reserve additional space for a structure to improve efficiency and **ENFORCE ALIGNMENT** within the structure. <br>
 Furthermore, size of a structure depends on the order of the fields. 
 <img width="801" alt="Screenshot 2024-03-02 at 8 15 29 PM" src="https://github.com/liuandy1207/notes/assets/72530429/eb81307b-7216-494d-806f-2bd153dc8da4">
@@ -44,6 +46,16 @@ TYPE IDENTIFIER[LENGTH] = {...};
 &emsp; → You may initialize with AT MOST `LENGTH` elements. If there are less than `LENGTH` elements, the remaining values are initialized to `0`. <br>
 &emsp; → If `LENGTH` is not explicitly given, the compiler will impliclty calculate array length based on the number of elements provided during initialization. <br>
 &emsp; → `{}` can only be used during initalization. It can not be used for assignment. 
+
+### Array Size
+An array of $k$ elements, each of size $s$ bytes, requires $k\times s$ bytes in memory. 
+
+### Arrays in Memory
+Arrays are stored in one consecutive block of memory. 
+<img width="827" alt="Screenshot 2024-03-02 at 11 11 48 PM" src="https://github.com/liuandy1207/notes/assets/72530429/2141e3bc-9b37-4795-aaf7-2f18f94dd5f1">
+
+### Dereferencing Arrays
+Dereferencing an array is the same as accessing its first element at index `0`. <br>
 
 ### Uninitialized Arrays
 Global arrays become zero-filled. <br>
