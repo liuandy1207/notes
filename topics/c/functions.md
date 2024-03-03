@@ -19,6 +19,7 @@ Format specifiers act as a placeholder for non-`String` additional arguments to 
 ```C
 %d    // int
 %c    // char
+%f    // float
 
 ```
 
