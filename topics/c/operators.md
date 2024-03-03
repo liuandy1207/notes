@@ -63,3 +63,15 @@ x--
 
 ## Size Operator - `sizeof(TYPE_OR_IDENTIFIER)`
 Returns the number of bytes required to store the given data type or identifier. 
+
+## Field Access Operator - `.`
+Returns the value of the requested field for a structure.
+```C
+// SAMPLE VALUES
+struct posn p = {3, 4};
+
+p.x = 3
+p.y = 4
+
+```
+
