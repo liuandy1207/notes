@@ -91,7 +91,14 @@ pp - pq = \dfrac{p-q}{\text{sizeof}(p)}
 p = q + i \quad \Rightarrow \quad p - q = i
 ```
 
+### Pointer Arithmetic with Arrays
+```C
+// SAMPLE VALUES
+arr[0] = *arr
+arr[1] = *(arr + 1)
+arr[i] = *(arr + i)
 
+```
 
 
 
