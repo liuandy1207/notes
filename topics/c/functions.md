@@ -20,6 +20,7 @@ Format specifiers act as a placeholder for non-`String` additional arguments to 
 %d    // int
 %c    // char
 %f    // float
+%p    // hexadecimal address
 
 ```
 
