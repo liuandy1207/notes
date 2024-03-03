@@ -39,7 +39,8 @@ Pass by reference occurs when pointers are passed to functions. <br>
 This allows a function to directly write into the stack frame of the caller function (side effect). <br>
 Then, this allows a function to "return" more than one value to the caller function. <br>
 
-Many functions only return integers corresponding to exit codes. They achieve their main purposes through pass by reference. 
+Many functions only return integers corresponding to exit codes. They achieve their main purposes through pass by reference. <br>
+Functions must **NEVER** return addresses within its own stack frame. 
 
 
 
