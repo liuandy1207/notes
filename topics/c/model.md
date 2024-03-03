@@ -11,7 +11,7 @@ When the keyword `return` is reached, the program locations returns back to the 
 One bit can either be `0` or `1`. <br>
 One byte consists of `8` bits.
 
-The smallest **ADRESSABLE** (accessible) unit of memory is a byte. <br>
+The smallest **ADDRESSABLE** (accessible) unit of memory is a byte. <br>
 To access a block of memory, you must know its address (position) in memory. <br> 
 Memory addresses are typically represented in hexadecimal.
 
