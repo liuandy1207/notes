@@ -33,6 +33,10 @@ Furthermore, size of a structure depends on the order of the fields.
 <img width="801" alt="Screenshot 2024-03-02 at 8 15 29 PM" src="https://github.com/liuandy1207/notes/assets/72530429/eb81307b-7216-494d-806f-2bd153dc8da4">
 <img width="796" alt="Screenshot 2024-03-02 at 8 15 50 PM" src="https://github.com/liuandy1207/notes/assets/72530429/3a8a9dd7-5bc1-45d3-8c35-04579dde7b94">
 
+### Passing Structures
+Structures pass by value implicitly, which can take up massive amounts of memory. <br>
+Consequently, addresses of structures are passed by reference instead to prevent structure copying. 
+
 ## Arrays
 An array is a data structure that contains a **FIXED NUMBER** of elements of the **SAME TYPE**. <br>
 Each element is stored at an **INDEX** of consecutive integers, starting at `0`.
@@ -53,6 +57,18 @@ An array of $k$ elements, each of size $s$ bytes, requires $k\times s$ bytes in 
 ### Arrays in Memory
 Arrays are stored in one consecutive block of memory. 
 <img width="827" alt="Screenshot 2024-03-02 at 11 11 48 PM" src="https://github.com/liuandy1207/notes/assets/72530429/2141e3bc-9b37-4795-aaf7-2f18f94dd5f1">
+
+### Passing Arrays
+Arrays pass by reference implicitly, only the address of the array is given to a function. <br>
+Be sure to use the keyword `const` before `type` if the function should **NOT** mutate the contents of a passed array. 
+```C
+// SAMPLE VALUES
+void foo (int arr[]) {      // note the inclusion of []
+  // ...
+}
+
+```
+&emsp; → You may specify an array length within the `[]`, but it will be ignored. 
 
 ### Dereferencing Arrays
 Dereferencing an array is the same as accessing its first element at index `0`. <br>
