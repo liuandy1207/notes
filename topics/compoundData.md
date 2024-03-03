@@ -40,7 +40,12 @@ TYPE IDENTIFIER[LENGTH] = {...};
 ```
 &emsp; → Definining arrays requires the length to be known beforehand. <br>
 &emsp; → You may initialize with AT MOST `LENGTH` elements. If there are less than `LENGTH` elements, the remaining values are initialized to `0`. <br>
+&emsp; → If `LENGTH` is not explicitly given, the compiler will impliclty calculate array length based on the number of elements provided during initialization. <br>
 &emsp; → `{}` can only be used during initalization. It can not be used for assignment. 
+
+### Uninitialized Arrays
+Global arrays become zero-filled. <br>
+Local arrays are filled with arbitrary (garbage) values from the stack.
 
 
 
