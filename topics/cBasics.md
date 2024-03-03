@@ -101,28 +101,3 @@ Commas can be used to have more variables in each portion of the `for` loop.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
