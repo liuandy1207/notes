@@ -45,7 +45,9 @@ Space for global constants is reserved before space for global variables.<br>
 Both global memory sections are created and intialized at **COMPILE TIME**. 
 
 ### Stack Frames
-Every function call generates a stack frame. <br>
+Every function call generates a stack frame. Space for the stack frame is only reserved upon a function call. <br>
+When a function returns, the stack frame is removed and the control flow returns the caller. 
+
 Stack frames begin at the **HIGHEST** memory address available. <br>
 Each subsequent stack frame is placed at increasingly lower addresses. <br>
 **STACK OVERFLOW** occurs when the stack grows large enough to collide with other sections of memory. 
@@ -53,7 +55,18 @@ Each subsequent stack frame is placed at increasingly lower addresses. <br>
 Each stack frame contains:
 - The values of each parameter
 - All local data (variables and constants) within the function block.
+  - The intial values of local data are set when their definition is encountered. 
 - The return address (location inside the calling function).
+
+
+**Pass by Value**
+When a stack frame is created, a **COPY** of each parameter and the return address is placed in the stack frame. <br>
+
+**Uninitialized Memory**
+For global data, C automatically initializes the variable to `0`. <br>
+However, it is good style to intialize global variables explicitly. 
+
+For local data, C writes an arbitrary initial value.  
 
 
 
