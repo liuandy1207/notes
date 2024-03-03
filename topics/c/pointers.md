@@ -44,6 +44,8 @@ Functions must **NEVER** return addresses within its own stack frame.
 
 To avoid structure copying, always pass the **ADDRESS** of a structure instead of a copy. 
 
+Additionally, all pointers should be asserted: `assert(ptr);`
+
 ### Preventing Side Effects (`const` Pointers)
 For a non-pointer value, `const` enforces that the parameter is immutable **WITHIN** the function. <br>
 It does **NOT** require the passed parameter to be constant. 
