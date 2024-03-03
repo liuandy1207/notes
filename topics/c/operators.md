@@ -84,7 +84,8 @@ It is the inverse of the address operator.
 
 ### Levels of Indirection 
 It is possible to have multiple levels of indirection. <br>
-That is, pointers can point to pointers, which can be derferenced many times back to back. 
+That is, pointers can point to pointers, which can be derferenced many times back to back. <br>
+However, it is uncommon to have more than three levels of indirection.
 
 
 
