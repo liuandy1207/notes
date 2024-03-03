@@ -44,6 +44,7 @@ while (scanf("%d", &input) == 1) {
 }
 
 \\ read in one character, including whitespace
+char in_char = '\0';
 int count = scanf("%c", &in_char);
 \\ read in one character, excluding whitespace
 int count = scanf(" %c", &in_char);
