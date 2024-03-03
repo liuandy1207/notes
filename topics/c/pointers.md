@@ -88,7 +88,7 @@ Double however, two pointers of the same type can be subtracted.
 pp - pq = \dfrac{pp-pq}{\text{sizeof}(p)}
 ```
 ```math
-p = q + \qquad \Rightarrow \qquad p - q = i
+p = q + i \quad \Rightarrow \quad p - q = i
 ```
 
 
