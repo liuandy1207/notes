@@ -74,6 +74,15 @@ void foo (int arr[]) {      // note the inclusion of []
 ### Dereferencing Arrays
 Dereferencing an array is the same as accessing its first element at index `0`. <br>
 
+### Multi-Dimensional Arrays
+Multi-dimensional arrays often come with various limitations. <br>
+It is better to represent multi-dimensional data in a single dimension by mapping higher dimensions down. 
+```C
+// SAMPLE VALUES
+arr[r][c] = arr[(r * row_length) + c]
+
+```
+
 ### Uninitialized Arrays
 Global arrays become zero-filled. <br>
 Local arrays are filled with arbitrary (garbage) values from the stack.
