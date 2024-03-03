@@ -92,6 +92,8 @@ p = q + i \quad \Rightarrow \quad p - q = i
 ```
 
 ### Pointer Arithmetic with Arrays
+Pointer notation applies pointer arithmetic to access array elements. <br>
+Array-index notation is the counterpart to pointer notation and utilizes the standard `[]` to access array elements. 
 ```C
 // SAMPLE VALUES
 arr[0] = *arr
@@ -99,6 +101,7 @@ arr[1] = *(arr + 1)
 arr[i] = *(arr + i)
 
 ```
+
 
 
 
