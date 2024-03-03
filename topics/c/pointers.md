@@ -25,4 +25,5 @@ Dereferencing a `NULL` pointer will crash the program.
 <img width="852" alt="Screenshot 2024-03-02 at 9 24 24 PM" src="https://github.com/liuandy1207/notes/assets/72530429/ff3719de-fb88-4ca5-9dcd-5dfb6b126734">
 <img width="863" alt="Screenshot 2024-03-02 at 9 25 43 PM" src="https://github.com/liuandy1207/notes/assets/72530429/82fbeff4-537d-4be3-95c9-b5e2eec709ee">
 <img width="853" alt="Screenshot 2024-03-02 at 9 24 45 PM" src="https://github.com/liuandy1207/notes/assets/72530429/599d723c-7cd0-47a1-8a2d-68e0258922d2">
+
 &emsp; → `pi` is mutated to point at whatever `pj` is pointing at. 
