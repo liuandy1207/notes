@@ -19,5 +19,6 @@ C uses a **STATIC TYPING** system where:
 ## Characters - `char`
 8-bits of data are interpreted as an ASCII character. <br>
 `char`s can have values between $-2^8$ and $2^8$. <br>
-Single quotes are used to indicate an ASCII character. 
+Single quotes are used to indicate an ASCII character. <br>
+`\0` is the **NULL** character.
 <img width="909" alt="Screenshot 2024-03-02 at 7 42 39 PM" src="https://github.com/liuandy1207/notes/assets/72530429/8172d3f9-8449-4405-b2c7-b6a799ee8185">
