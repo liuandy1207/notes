@@ -62,7 +62,7 @@ int * const ptr = &i;          // ptr always points at mutable int i, it cannot 
 
 const int * const ptr = &i;    // ptr always point at int i
 
-const int * const * const ptr = &ptr;   // prevents the mutation of the underlying value at any level of indirection 
+const int * const * const pptr = &ptr;   // prevents the mutation of the underlying value at any level of indirection 
 
 ```
 
