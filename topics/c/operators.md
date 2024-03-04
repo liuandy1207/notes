@@ -94,7 +94,7 @@ Returns the value of the requested field for a structure pointer.
 struct posn p = {3, 4};
 struct posn *pp = &p;
 
-pp->x = 3    // same as *(pp).x
+pp->x = 3    // same as (*pp).x    note: the brackets () are REQUIRED!
 
 ```
 
