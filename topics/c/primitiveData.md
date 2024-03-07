@@ -1,4 +1,4 @@
-# C Primitives
+# C Primitive Data
 C uses a **STATIC TYPING** system where:
 - All types **MUST BE KNOWN** when the file **COMPILES**, and
 - The type of an identifier **CANNOT CHANGE**. 
