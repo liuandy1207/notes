@@ -1,5 +1,13 @@
 # C
 - [History](./topics/c/history.md)
+- [Basics](./topics/c/basics.md)
+- [Primitive Data](./topics/c/primitiveData.md)
+- [Compound Data](./topics/c/compoundData.md)
+- [Pointers](./topic/c/pointers.md)
+- [Operators](./topic/c/operators.md)
+- [Functions](./topic/c/functions.md)
+- [Model](./topic/c/model.md)
+- [Style*](./topic/c/style.md)
 
 
 
@@ -14,14 +22,6 @@ ignore below lowkey
 
 # Arduino
 
-
-
-# C
-- [Theory](./topics/cTheory.md)
-- [Basics](./topics/cBasics.md)
-- [Functions](./topics/cFunctions.md)
-- [Pointers](./topics/cPointers.md)
-- [Arrays](./topics/cArrays.md)
 # Git
 - [Theory](./topics/gitTheory.md)
 - [Basics](./topics/gitBasics.md)
