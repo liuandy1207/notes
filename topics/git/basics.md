@@ -13,7 +13,7 @@
 ## Basic Commands
 
 ### Initialization
-```git
+```bash
 git init
 
 ```
