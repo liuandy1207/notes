@@ -10,22 +10,56 @@
 - **Staging Area** <br>
   → a collection of related changes (changeset) from the working directory that will be committed as a single change to the repo <br>
 
-## Initialization - `git init`
-Places a directory under `git` version control.
+## Basic Commands
 
-## Tracking Files
+### Initialization
 ```git
-git status      // show differences between the repo, working directory, and staging area
-
-git add FILES   // places an untracked file in the staging area
-
+git init
 
 ```
+Places a directory under `git` version control. <br>
+This is now the working directory.
 
-## Committing Staged Changes
+### Staging Files
+```git
+git add FILES
+
+git rm FILES    // inverse of git add, removes files from the WD and SA
+
+```
+Places an untracked file from the working directory in the staging area. 
+
+### Committing Staged Changes
 ```git
 git commit -m "COMMIT_MESSAGE"
 
 ```
+Commits the changeset to the repo. 
+
+### Monitoring Status
+```git
+git status
+
+```
+Show differences between the SA and the WD and between the SA and the repo. <br>
+Also shows untracked files. 
+
+### Viewing Commit History
+```git
+git log
+
+```
+Show commit history. 
+
+### Comparing Modifications
+```git
+git diff
+
+git diff --color-words    // color codes the resulting output for ease of reference
+
+```
+If no files has been staged, then it shows differences between the current WD and last commit. <br>
+If files have been staged, then it shows differences between the current WD and the code at time of staging. 
+
 
 
