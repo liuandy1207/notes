@@ -88,6 +88,24 @@ Staging area will be cleared, but still available in the WD. <br>
 `--hard` deletes the changeset and all modified files in the WD (even unstaged) will be reset to the time of the commit. <br>
 `--soft` does not clear the staging area. Only modifies `HEAD` and the branch reference. 
 
+### Checkout 
+```git
+// Usage on commits
+git checkout ID
+
+// Usage on files
+git checkout ID;  -- FILE
+
+```
+When used on commits, git will load a snapshot of the repo at the time of the specified commit. <br>
+When this occurs, `HEAD` will get DETATCHED. In this state, any changes made (even commits) do NOT affect the repo. <br>
+If the intent is to undo changes, a new branch must be created to attatch `HEAD` onto. <br>
+Any future work will branch off from this new branch. This is acceptable if the old branch is no longer needed. <br> 
+
+When used on files, git will load a snapshot of a specific file at the time of the specified commit. <br> 
+Additionally, providing a file does not detatch `HEAD`, so these checked out files can simply be committed to undo any changes. 
+
+
 
 
 
