@@ -61,5 +61,39 @@ git diff --color-words    // color codes the resulting output for ease of refere
 If no files has been staged, then it shows differences between the current WD and last commit. <br>
 If files have been staged, then it shows differences between the current WD and the code at time of staging. 
 
+## Undo Commands
+
+### Revert
+```git
+git revert ID
+
+git revert -n ID    // does not automatically commit the revert, allowing for more changes
+
+```
+Reverts a commit, given the commit's `ID` found by running `git log`.
+
+### Reset
+```git
+git reset ID
+
+git reset --hard
+git rest --soft 
+
+git reset     // defaults to reset to the last commit
+
+```
+Resets `HEAD` and the branch reference to a specified commit. <br>
+Staging area will be cleared, but still available in the WD. <br>
+
+`--hard` deletes the changeset and all modified files in the WD (even unstaged) will be reset to the time of the commit. <br>
+`--soft` does not clear the staging area. Only modifies `HEAD` and the branch reference. 
+
+
+
+
+
+
+
+
 
 
