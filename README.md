@@ -14,25 +14,7 @@
 - [Branches](./topics/git/branches.md)
 - [Configurations](./topics/git/configurations.md)
 
-# Shell
-
-
-
-
-
-
-
-
-
-<br><br><br><br>
-ignore below lowkey<br>
-<br>
-<br>
-
-# Arduino
-
-# Linux
--  [Terminal](./topics/linuxTerminal.md)
-### **Tools**
--  [bash - Scripting](./topics/bashScripting.md)
--  [clang - C Compiler](./topics/clangCompiling.md)
+# Command Line
+- [Basics](./topics/commandLine/basics.md)
+- [bash Scripting](./topics/commandLine/bashScripting.md)
+- [clang Compiling](./topics/commandLine/clangCompiling.md)
