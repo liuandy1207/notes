@@ -6,6 +6,7 @@
 - [Pointers](./topics/c/pointers.md)
 - [Operators](./topics/c/operators.md)
 - [Functions](./topics/c/functions.md)
+- 
 - [Model](./topics/c/model.md)
 - [Style*](./topics/c/style.md)
 
