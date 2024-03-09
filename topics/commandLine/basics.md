@@ -57,7 +57,7 @@ $(COMMAND_EXPRESSION)  # embedded command syntax, $()
 
 ## Files
 ```shell
-# LIST
+# LIST (for directories)
 ls      # list all non-hidden files
 ls -a   # list all files, including hidden files
 ls -l   # list in long format
