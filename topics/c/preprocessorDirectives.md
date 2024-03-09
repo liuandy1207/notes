@@ -20,11 +20,12 @@ The preprocessor replaces the `#include` statement with the contents of the spec
 &emsp; → `IDENTIFIER` should be in all caps <br>
 &emsp; → `VALUE` may have white space <br>
 &emsp; → `VALUE` can be nothing (defaults to the empty string) <br>
+
 The preprocessor replaces all instances of `IDENTIFIER` with `VALUE`. <br>
 
 Constants can be defined by macros, but `const` is typically used instead. <br>
 The exception is when an array of a constant length is defined. <br>
-Using `const` creates an undesireable variable length array, but using macros allows us to achieve the desired effect without creating a VLA. 
+Using `const` creates an undesired variable length array, but using macros allows us to achieve the desired effect without creating a VLA. 
 
 ### Stacked Macro Expansion
 The value of a macro can be a subsequent macro, creating a macro chain. 
@@ -61,5 +62,26 @@ clang -DMACRO -DMACROTWO=10 CFILE.c
 
 ```
 &emsp; → if a macro defined with `-D` is not given a value, its value will default to `1` <br>
+
 The clang compiler will define `MACRO` when attempting to compile `CFILE.c`.
 
+### Commenting Out Code
+```C
+#if 0
+  // the surrounding code can be used to comment out segments of code
+#endif
+
+```
+&emsp; → `#if` and `#endif` nest perfectly, as opposed to `/* */`
+
+### Include Guards
+```C
+#ifndef UNIQUE_MACRO
+
+#define UNIQUE_MACRO
+#include UNIQUE_HEADER
+
+#endif
+
+```
+Applying include guards in this style for ALL HEADER FILES prevents including the same header twice and undesired redefinitions. 
