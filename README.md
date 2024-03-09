@@ -15,6 +15,6 @@
 - [Configurations](./topics/git/configurations.md)
 
 # Command Line
-- [Basics](./topics/commandLine/basics.md)
-- [bash Scripting](./topics/commandLine/bashScripting.md)
-- [clang Compiling](./topics/commandLine/clangCompiling.md)
+- [Basics*](./topics/commandLine/basics.md)
+- [bash Scripting*](./topics/commandLine/bashScripting.md)
+- [clang Compiling*](./topics/commandLine/clangCompiling.md)
