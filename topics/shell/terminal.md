@@ -1,3 +1,5 @@
+# Shell Terminal
+
 ## Locations & Navigation
 
 ```bash
