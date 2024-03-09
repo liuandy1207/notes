@@ -74,7 +74,7 @@ The clang compiler will define `MACRO` when attempting to compile `CFILE.c`.
 ```
 &emsp; → `#if` and `#endif` nest perfectly, as opposed to `/* */`
 
-### Include Guards
+### `#include` Guards
 ```C
 #ifndef UNIQUE_MACRO
 
