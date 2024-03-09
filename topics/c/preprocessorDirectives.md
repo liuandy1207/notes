@@ -16,10 +16,10 @@ The preprocessor replaces the `#include` statement with the contents of the spec
 #define IDENTIFIER VALUE    // definition of an object-like macro
 
 ```
-&emsp; → `IDENTIFIER` must NOT have any white space
-&emsp; → `IDENTIFIER` should be in all caps
-&emsp; → `VALUE` may have white space
-&emsp; → `VALUE` can be nothing (defaults to the empty string)
+&emsp; → `IDENTIFIER` must NOT have any white space <br>
+&emsp; → `IDENTIFIER` should be in all caps <br>
+&emsp; → `VALUE` may have white space <br>
+&emsp; → `VALUE` can be nothing (defaults to the empty string) <br>
 The preprocessor replaces all instances of `IDENTIFIER` with `VALUE`. <br>
 
 Constants can be defined by macros, but `const` is typically used instead. <br>
@@ -60,6 +60,6 @@ clang -DMACRO -DMACROTWO=10 CFILE.c
 # note the spacing of -D and MACRO
 
 ```
-&emsp; → if a macro defined with `-D` is not given a value, its value will default to `1`
+&emsp; → if a macro defined with `-D` is not given a value, its value will default to `1` <br>
 The clang compiler will define `MACRO` when attempting to compile `CFILE.c`.
 
