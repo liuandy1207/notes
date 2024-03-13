@@ -77,10 +77,8 @@ The clang compiler will define `MACRO` when attempting to compile `CFILE.c`.
 ### `#include` Guards
 ```C
 #ifndef UNIQUE_MACRO
-
 #define UNIQUE_MACRO
 #include UNIQUE_HEADER
-
 #endif
 
 ```
