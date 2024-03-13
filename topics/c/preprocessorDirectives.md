@@ -78,8 +78,9 @@ The clang compiler will define `MACRO` when attempting to compile `CFILE.c`.
 ```C
 #ifndef UNIQUE_MACRO
 #define UNIQUE_MACRO
-#include UNIQUE_HEADER
+// header file contents
 #endif
 
 ```
-Applying include guards in this style for ALL HEADER FILES prevents including the same header twice and undesired redefinitions. 
+Applying include guards in this style for ALL HEADER FILES prevents including the same header twice and undesired redefinitions. <br>
+There are no include guards in implementation files (like main.c).
