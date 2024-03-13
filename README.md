@@ -2,12 +2,13 @@
 - [History](./topics/c/history.md)
 - [Basics](./topics/c/basics.md)
 - [Primitive Data](./topics/c/primitiveData.md)
-- [Compound Data](./topics/c/compoundData.md)
+- [Data Structures](./topics/c/dataStructures.md)
 - [Pointers](./topics/c/pointers.md)
 - [Operators](./topics/c/operators.md)
 - [Functions](./topics/c/functions.md)
 - [Preprocessor Directives](./topics/c/preprocessorDirectives.md)
-- 
+- [Modules](./topics/c/modules.md)
+- [Abstract Data Types](./topics/c/abstractDataTypes.md)
 - [Model](./topics/c/model.md)
 - [Style*](./topics/c/style.md)
 
