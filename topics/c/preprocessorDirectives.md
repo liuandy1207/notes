@@ -83,6 +83,6 @@ The clang compiler will define `MACRO` when attempting to compile `CFILE.c`.
 
 ```
 Applying include guards in this style for ALL HEADER FILES prevents including the same header twice and undesired redefinitions. <br>
-There are no include guards in implementation files (like main.c). <br>
-It is good style to name UNIQUE_MACRO after the header file, replacing "." in the extension with  "_". 
+There are no include guards in implementation files (like `main.c`). <br>
+It is good style to name `UNIQUE_MACRO` after the header file, replacing "." in the extension with  "_". 
 
