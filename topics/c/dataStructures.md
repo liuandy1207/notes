@@ -1,4 +1,4 @@
-# C D
+# C Data Structures
 
 ## Structures
 ```C
