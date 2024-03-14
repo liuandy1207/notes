@@ -55,7 +55,7 @@ When the max length of an oversized array is exceeded, possibilities include:
 
 - Assertions failing
 - Error messages (with or without modification)
-- Special return value
+- Returning a special value
 
 
 
