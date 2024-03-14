@@ -10,3 +10,14 @@ We use efficiency to objectively compare algorithms.
 - **POWER EFFICIENCY** <br>
 &emsp; → how much power is consumed by the algorithm to solve a problem
 
+## Running Time $T(n)$
+Running time is measured by the number of ELEMENTARY OPERATIONS required to solve the problem. <br>
+
+The length of the data is traditional represented by $n$. <br>
+Often, $n$ is obvious by context, but if there is any ambiguity, you should clearly state what $n$ represents. 
+
+### Constant Runtime
+Regardless of the involved values, the number of EOs remains the SAME. 
+
+### Linear Runtime
+If the involved value is doubled, the number of EOs also (roughly) doubles. 
