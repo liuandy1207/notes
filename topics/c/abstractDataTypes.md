@@ -9,39 +9,39 @@ With ADTs, the client does NOT know the structure of the data and can only acces
 Stacks exhibit LIFO behaviour (last in, first out).
 
 ### Typical Stack Operations
-- **PUSH**
+- **PUSH** <br>
 &emsp; → adds an item to the top of the stack
-- **TOP**
+- **TOP** <br>
 &emsp; → returns the item at the top of the stack
-- **POP**
+- **POP** <br>
 &emsp; → removes the item at the top of the stack and returns it
-- **EMPTY?**
+- **EMPTY?** <br>
 &emsp; → determines if the stack is empty or not
 
 ## Queue ADT
 Queues exhibit FIFO behaviour (first in, first out).
 
 ### Typical Queue Operations
-- **ENQUEUE**
+- **ENQUEUE** <br>
 &emsp; → adds an item to the end of the queue
-- **FRONT**
+- **FRONT** <br>
 &emsp; → returns the item at the front of the queue
-- **DEQUEUE**
+- **DEQUEUE** <br>
 &emsp; → removes the item at the front of the queue and returns it
-- **EMPTY?**
+- **EMPTY?** <br>
 &emsp; → determines if the queue is empty or not
 
 ## Sequence ADT
 Sequences can insert and retrieve/delete items at any arbitrary position within them.
 
 ### Typical Sequence Operations
-- **LENGTH**
+- **LENGTH** <br>
 &emsp; → return the number of items in the sequence
-- **INSERT**
+- **INSERT** <br>
 &emsp; → insert a new item at a given position
-- **AT**
+- **AT** <br>
 &emsp; → returns the item at a given position
-- **REMOVE**
+- **REMOVE** <br>
 &emsp; → removes the item at a given position and returns it
 
 ## Oversized Arrays
