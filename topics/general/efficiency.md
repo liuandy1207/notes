@@ -16,6 +16,8 @@ Running time is measured by the number of ELEMENTARY OPERATIONS required to solv
 The length of the data is traditional represented by $n$. <br>
 Often, $n$ is obvious by context, but if there is any ambiguity, you should clearly state what $n$ represents. 
 
+Typically, algorithms are compared by their WORST CASE scenerios. 
+
 ### Constant Runtime
 Regardless of the involved values, the number of EOs remains the SAME. 
 
