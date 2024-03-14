@@ -63,6 +63,20 @@ Examples:
 ### Exponential - $O(2^n)$
 One call results in multiple subsequent calls (complex recursion). 
 
+## Iterative Analysis
+1. Work from the INNERMOST loop to the OUTERMOST.
+2. Determine teh number of iterations in the loop (worst case) in relation to the size of the data or an outer loop counter.
+3. Determine the running time per iteration.
+4. Write the summation(s) and simplify the expression.
+
+## Recursive Analysis
+1. Identify the order of the function EXCLUDING recursion.
+2. Determine the size of the data for the next recursive call(s).
+3. Write the full reccurrence relation.
+4. Match with a known solution. 
+<img width="611" alt="Screenshot 2024-03-14 at 7 35 09 PM" src="https://github.com/liuandy1207/notes/assets/72530429/05db07cf-0375-4e12-953f-d77b4d9e5aa9">
+<img width="772" alt="Screenshot 2024-03-14 at 7 38 50 PM" src="https://github.com/liuandy1207/notes/assets/72530429/3966d431-5456-4451-a7c2-33200573b2bb">
+
 
 
 
