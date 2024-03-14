@@ -8,7 +8,7 @@ With ADTs, the client does NOT know the structure of the data and can only acces
 ## Stack ADT
 Stacks exhibit LIFO behaviour (last in, first out).
 
-### Typical Operations
+### Typical Stack Operations
 - **PUSH**
 &emsp; → adds an item to the top of the stack
 - **TOP**
@@ -19,5 +19,41 @@ Stacks exhibit LIFO behaviour (last in, first out).
 &emsp; → determines if the stack is empty or not
 
 ## Queue ADT
+Queues exhibit FIFO behaviour (first in, first out).
+
+### Typical Queue Operations
+- **ENQUEUE**
+&emsp; → adds an item to the end of the queue
+- **FRONT**
+&emsp; → returns the item at the front of the queue
+- **DEQUEUE**
+&emsp; → removes the item at the front of the queue and returns it
+- **EMPTY?**
+&emsp; → determines if the queue is empty or not
+
+## Sequence ADT
+Sequences can insert and retrieve/delete items at any arbitrary position within them.
+
+### Typical Sequence Operations
+- **LENGTH**
+&emsp; → return the number of items in the sequence
+- **INSERT**
+&emsp; → insert a new item at a given position
+- **AT**
+&emsp; → returns the item at a given position
+- **REMOVE**
+&emsp; → removes the item at a given position and returns it
+
+## Oversized Arrays
+Oversized arrays are arrays of a specified maximum possible length such that there may be space for additional elements. <br>
+Oversized arrays keep track of the MAXIMUM POSSIBLE length and a CURRENT length (the number of elements currently stored). 
+
+Note that maximums are wasteful if excessively large, but restrictive if too small. 
+
+
+
+
+
+
 
 
