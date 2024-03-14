@@ -10,7 +10,7 @@ We use efficiency to objectively compare algorithms.
 - **POWER EFFICIENCY** <br>
 &emsp; → how much power is consumed by the algorithm to solve a problem
 
-## Running Time $T(n)$
+## Running Time - $T(n)$
 Running time is measured by the number of ELEMENTARY OPERATIONS required to solve the problem. <br>
 
 The length of the data is traditional represented by $n$. <br>
