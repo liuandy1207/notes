@@ -45,10 +45,17 @@ Sequences can insert and retrieve/delete items at any arbitrary position within 
 &emsp; → removes the item at a given position and returns it
 
 ## Oversized Arrays
-Oversized arrays are arrays of a specified maximum possible length such that there may be space for additional elements. <br>
-Oversized arrays keep track of the MAXIMUM POSSIBLE length and a CURRENT length (the number of elements currently stored). 
+To circumvent the need to know the length of an array in advance, we can create OVERSIZED ARRAYS that have space for more elements than likely neccessary. <br>
 
+Oversized arrays keep track of the MAXIMUM POSSIBLE length and a CURRENT length (the number of elements currently stored). <br>
 Note that maximums are wasteful if excessively large, but restrictive if too small. 
+
+### Exceeding the Max Length
+When the max length of an oversized array is exceeded, possibilities include:
+
+- Assertions failing
+- Error messages (with or without modification)
+- Special return value
 
 
 
