@@ -9,6 +9,7 @@
 - [Preprocessor Directives](./topics/c/preprocessorDirectives.md)
 - [Modules](./topics/c/modules.md)
 - [Abstract Data Types](./topics/c/abstractDataTypes.md)
+- [Strings](./topics/c/strings.md)
 - [Model](./topics/c/model.md)
 - [Style*](./topics/c/style.md)
 
