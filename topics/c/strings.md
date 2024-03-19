@@ -28,3 +28,10 @@ Side Note: it is good style to have `const` parameters to communicate that the s
 &emsp; → uppercase precedes lowercase
 &emsp; → if a match is made, compare the next character
 
+## String Literals
+Strings that are NOT initialized as arrays are STRING LITERALS. 
+
+For string literals, the null-terminated `const char[]` is created in the GLOBAL READ-ONLY section of memory. <br>
+when the string literal appears in the code, it is replaced by the address of this array. 
+
+The content of string literal is IMMUTABLE, but their identifer is reassignable. 
