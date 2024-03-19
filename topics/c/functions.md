@@ -13,7 +13,7 @@ printf("Hello World!");
 printf("This is an integer: %d", 1);
 
 ```
-&emsp; → Time: $O(n), when given a STRING ($n$ is the length of the string)
+&emsp; → Time: $O(n)$, when given a STRING ($n$ is the length of the string)
 
 ### Format Specifiers
 Format specifiers act as a placeholder for non-`String` additional arguments to be supplemented. 
@@ -48,10 +48,19 @@ while (scanf("%d", &input) == 1) {
 \\ read in one character, including whitespace
 char in_char = '\0';
 int count = scanf("%c", &in_char);
+
 \\ read in one character, excluding whitespace
 int count = scanf(" %c", &in_char);
 
+
+
+\\ read in string (stop when whitespace or EOF)
+char name[10];
+int arr_len = 10;
+scanf("%9s", name);    // the number between %s should be 1 less than arr_len - 1 (save a space for '\0')
+
 ```
+&emsp; → Time: $O(n)$, when given a STRING ($n$ is the length of the string)
 
 ## String Length Function - strlen(STRING)
 Returns the length of the given string. Length does NOT include the null-terminator. <br>
@@ -66,6 +75,12 @@ Returns a POSITIVE value if STRING2 precedes STRING1. <br>
 Returns `0` if STRING1 and STRING2 are equal.
 
 &emsp; → Time: $O(n)$, $n$ is the minimum length of STRING1 and STRING2
+
+## String Copy Function - strcpy(DEST, SRC)
+Copies the content of string DST into SRC. <br>
+Note that DEST must be large enough (including space for `'\0'`. <br.
+&emsp; → Time: $O(n)$, $n$ is the length of SRC
+
 
 
 
