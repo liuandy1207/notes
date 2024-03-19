@@ -1,7 +1,9 @@
 # C Strings
 
 There is NO BUILT-IN STRING type in C. <br>
-The convention is that a C string is an ARRAY OF `char`s, terminated by the null-character (`'\0'`). <br>
+The convention is that a C string is an ARRAY OF `char`s, terminated by the null-character (`'\0'`). 
+
+Strings behave like arrays: their content is mutable, but their identifier is NOT reassignable. 
 
 ## String Initialization
 ```C
