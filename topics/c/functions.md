@@ -51,4 +51,23 @@ int count = scanf(" %c", &in_char);
 
 ```
 
+## String Length Function - strlen(STRING)
+Returns the length of the given string. Length does NOT include the null-terminator. <br>
+
+Time: $O(n)$
+&emsp; → avoid calling `strlen` within loops because of the time complexity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
