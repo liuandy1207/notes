@@ -62,26 +62,26 @@ scanf("%9s", name);    // the number between %s should be 1 less than arr_len - 
 ```
 &emsp; → Time: $O(n)$, when given a STRING ($n$ is the length of the string)
 
-## String Length Function - strlen(STRING)
+## String Length Function - `strlen(STRING)`
 Returns the length of the given string. Length does NOT include the null-terminator. <br>
 
 &emsp; → Time: $O(n)$ <br>
 &emsp; &emsp; → avoid calling `strlen` within loops because of the time complexity
 
 
-## String Compare Function - strcmp(STRING1, STRING2)
+## String Compare Function - `strcmp(STRING1, STRING2)`
 Returns a NEGATIVE value if STRING1 precedes STRING2. <br>
 Returns a POSITIVE value if STRING2 precedes STRING1. <br>
 Returns `0` if STRING1 and STRING2 are equal.
 
 &emsp; → Time: $O(n)$, $n$ is the minimum length of STRING1 and STRING2
 
-## String Copy Function - strcpy(DEST, SRC)
+## String Copy Function - `strcpy(DEST, SRC)`
 Copies the content of string DST into SRC. <br>
 Note that DEST must be large enough (including space for `'\0'`. <br.
 &emsp; → Time: $O(n)$, $n$ is the length of SRC
 
-## String Concatenate Functino - strcat(DEST, SRC)
+## String Concatenate Functino - `strcat(DEST, SRC)`
 Appends the content of string SRC onto DST. <br>
 Note that DEST must be large enough (including space for `'\0'`. <br.
 &emsp; → Time: $O(n)$, $n$ is the length of SRC
