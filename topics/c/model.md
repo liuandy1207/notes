@@ -78,11 +78,11 @@ Returned memory can be reused for a future allocation. <br>
 If too much memory has already been allocated, attempts to borrow additional memory will fail. 
 
 **Advantages of the Heap** <br>
-- DYNAMIC: the size of memory to be allocated can be determined at runtime
-- RESIZABLE: allocated memory can be resized
-- SCOPE: allocated memory persists until it has been freed, functions can allocate memory that continues to be valid after the function returns
-- SAFETY: if memory runs out, it can be detected and handled properly (unlike stack overflows)
-- USER-MANAGED: unlike stack memory that is managed by the system, users must explicitly manage heap memory themselves
+- **DYNAMIC**: the size of memory to be allocated can be determined at runtime
+- **RESIZABLE**: allocated memory can be resized
+- **SCOPE**: allocated memory persists until it has been freed, functions can allocate memory that continues to be valid after the function returns
+- **SAFETY**: if memory runs out, it can be detected and handled properly (unlike stack overflows)
+- **USER-MANAGED**: unlike stack memory that is managed by the system, users must explicitly manage heap memory themselves
 
 
 
