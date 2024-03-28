@@ -68,15 +68,21 @@ However, it is good style to intialize global variables explicitly.
 
 For local data, C writes an arbitrary (garbage) initial value from the stack.  
 
+### The Heap
+The heap can be thought of as a big "pool" of memory that is available to your program. <br>
 
+Memory here is ALLOCATED from the heap upon request. <br>
+This memory is borrowed and must be returned (freed) back to theheap when it is no longer needed (memory deallocation). <br>
+Returned memory can be reused for a future allocation. <br>
 
+If too much memory has already been allocated, attempts to borrow additional memory will fail. 
 
-
-
-
-
-
-
+**Advantages of the Heap** <br>
+- DYNAMIC: the size of memory to be allocated can be determined at runtime
+- RESIZABLE: allocated memory can be resized
+- SCOPE: allocated memory persists until it has been freed, functions can allocate memory that continues to be valid after the function returns
+- SAFETY: if memory runs out, it can be detected and handled properly (unlike stack overflows)
+- USER-MANAGED: unlike stack memory that is managed by the system, users must explicitly manage heap memory themselves
 
 
 
