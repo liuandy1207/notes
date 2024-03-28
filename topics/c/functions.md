@@ -86,12 +86,22 @@ Appends the content of string SRC onto DST. <br>
 Note that DEST must be large enough (including space for `'\0'`. <br.
 &emsp; → Time: $O(n)$, $n$ is the length of SRC
 
-## Memory Allocation Functino - `malloc(SIZE)`
+## Memory Allocation Function - `malloc(SIZE)`
 Library: `<stdlib>`  <br>
 Dynamically allocates memory from the heap memory section. <br>
 Returns a pointer to the beginning of the block, or `NULL` if there was not enough heap memory available. <br>
 Time: $O(1)$ <br>
-Notes: often used with `sizeof` to allocate enough memory to store a specific data type
+Note: always use with `sizeof` to allocate enough memory to store a specific data type <br>
+Note: the memory provided by `malloc` is UNINITIALIZED
+Note: `malloc` returns a VOID POINTER (can point to any type)
+
+## Memory Free Function - `free(PTR)`
+Deallocates the space previously allocated by a memory allocation function. <br>
+If `PTR` is `NULL`, this function does nothing. <br>
+Note: every allocated memory block MUST be manually freed before the program terminates. <br>
+Note: `free` does NOT mutate data, the data is still there, but its pointer is now invalid. <br>
+Note: it is good form to assign `NULL` to a freed (dangling) pointer.
+
 
 
 
