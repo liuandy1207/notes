@@ -81,11 +81,17 @@ Copies the content of string DST into SRC. <br>
 Note that DEST must be large enough (including space for `'\0'`. <br.
 &emsp; → Time: $O(n)$, $n$ is the length of SRC
 
-## String Concatenate Functino - `strcat(DEST, SRC)`
+## String Concatenate Function - `strcat(DEST, SRC)`
 Appends the content of string SRC onto DST. <br>
 Note that DEST must be large enough (including space for `'\0'`. <br.
 &emsp; → Time: $O(n)$, $n$ is the length of SRC
 
+## Memory Allocation Functino - `malloc(SIZE)`
+Library: `<stdlib>`  <br>
+Dynamically allocates memory from the heap memory section. <br>
+Returns a pointer to the beginning of the block, or `NULL` if there was not enough heap memory available. <br>
+Time: $O(1)$ <br>
+Notes: often used with `sizeof` to allocate enough memory to store a specific data type
 
 
 
