@@ -102,6 +102,14 @@ Note: every allocated memory block MUST be manually freed before the program ter
 Note: `free` does NOT mutate data, the data is still there, but its pointer is now invalid. <br>
 Note: it is good form to assign `NULL` to a freed (dangling) pointer.
 
+## String Duplication Function - `strdup(str_ptr)`
+Duplicates a string and returns a different pointer. 
+
+## Memory Reallocation Functino - `malloc(ptr, newsize)`
+Returns of block of heap memory of size `newsize`. <br>
+If `ptr` is not `NULL`, the content of `*ptr` will be copied over and `ptr` will be freed. <br>
+Note: `realloc` is a `malloc`, a "copy", and then a `free` <br>
+Time: O(n)
 
 
 
