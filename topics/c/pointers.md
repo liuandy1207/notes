@@ -19,7 +19,21 @@ Dereferencing a `NULL` pointer will crash the program.
 `NULL` is considered false in a boolean context. <br>
 
 ## `void` Pointers 
-`void` pointers can point at anything. 
+`void` pointers can point at anything. <br>
+`void` pointers can NOT point at functions.
+
+`void` pointers can NOT be dereferenced. <br>
+However, `void` pointer addresses can be assigned to any pointer variable and THEN be dereferenced.<br>
+You should ONLy assign from a `void` pointer if YOU ARE SURE that the pointer variable is the CORRECT TYPE for the data at that address. 
+
+### Pointer Arithmetic Changes
+You can no longer add integers to move between cells. <br>
+Instead, you must use (sizeof(TYPE) to increment your `void` pointer. 
+
+### `void` Pointer Pointers
+Behaves like any other pointer-pointer. <br>
+It CAN be dereferenced. 
+
 
 ## Pointer Assignment
 <img width="852" alt="Screenshot 2024-03-02 at 9 24 24 PM" src="https://github.com/liuandy1207/notes/assets/72530429/ff3719de-fb88-4ca5-9dcd-5dfb6b126734">
