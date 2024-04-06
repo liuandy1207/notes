@@ -77,6 +77,7 @@ int ll_length(const struct llist *llst) {
 void ll_destroy(struct llist *lst) {
   struct llnode *current = lst->front;
   while (current) {
+    struct llnode *to_destroy = current;
     current = current->next;
     lln_destory(to_destroy);
   }
