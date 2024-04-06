@@ -20,6 +20,7 @@ This prevents the client from directly accessing and manipulating the linked dat
 ```C
 struct llist {
   struct llnode *front;
+  int length; // optional, used to cache info (update interface functions)
 };
 
 struct llnode {
@@ -132,8 +133,111 @@ void ll_insert_back(struct llist *lst, int itm) {
 
 ```
 
+```C
+// General Insertion
+// time: O(n)
+void slst_insert(struct llist *llst, int itm) {
+  struct llnode *new_node = lln_create(itm);
+  if (llst->front == NULL || itm <= llst->front->data) {
+    new_node->next = llst->front;
+    slst->front = new_node;
+  } else {
+    struct llnode *insert_after = llst->front;
+    while (insert_after->next != NULL &&
+    itm > insert_after->next->data) {
+      insert_after = insert_after->next;
+    }
+    new_node->next = insert_after->next;
+    insert_after->next = new_node;
+  }
+} 
+
+// General Removal
+// time: O(n)
+bool ll_remove_item(struct llist *lst, int itm) {
+  if (lst->front == NULL) return false;
+  if (lst->front->data == itm) {
+    ll_remove_front(lst);
+    return true;
+  }
+  struct llnode *remove_after = lst->front;
+  while (remove_after->next && itm != remove_after->next->data) {
+    remove_after = remove_after->next;
+  }
+  if (remove_after->next == NULL) return false;
+  struct llnode *to_remove = remove_after->next;
+  remove_after->next = remove_after->next->next;
+  lln_destroy(to_remove);
+  return true;
+}
 
 
+```
+
+### Linked List with a Back Pointer
+Back pointers improve the efficiency of `insert_back` from O(n) to O(1).
+```C
+struct llist {
+  struct llnode *front;
+  struct llnode *back;
+};
+
+struct llist *ll_create(void) {
+  struct llist *bpll = malloc(sizeof(struct llist));
+  bpll->front = NULL;
+  bpll->back = NULL;
+  return bpll;
+}
+
+void ll_insert_front(struct llist *lst, int itm) {
+  struct llnode *new_node = lln_create(itm);
+  if (lst->front== NULL) { // inserting into empty list
+    lst->front = lst->back = new_node;
+  } else { // inserting into non-empty list
+    new_node->next = lst->front;
+    lst->front = new_node;
+  }
+}
+
+void ll_insert_back(struct llist *lst, int itm) {
+  struct llnode *new_node = lln_create(itm);
+  if (lst->front == NULL) { // inserting into empty list
+    lst->front = lst->back = new_node;
+  } else { // inserting into non-empty list
+    lst->back->next = new_node;
+    lst->back = new_node
+  }
+}
+
+void ll_remove_front(struct llist *lst) {
+  assert(lst->front);
+  struct llnode *to_remove = lst->front;
+  lst->front = lst->front->next;
+  lln_destroy(to_remove);
+  if (lst->front == NULL) {
+    lst->back = NULL;
+  }
+}
+
+void ll_remove_back(struct llist *lst) {
+  assert(lst->back);
+  struct llnode *destroy_after = lst->front;
+  struct llnode *to_destroy = lst->front;
+  while (to_destroy->next != NULL) {
+    destroy_after = to_destroy;
+    to_destroy = to_destroy->next;
+  }
+  if (to_destroy == lst->first) { // removed final element
+    lst->front = lst->back = NULL;
+  } else { // removed non-final element
+    destroy_after->next = NULL;
+    lst->back = destroy_after;
+  }
+  lln_destroy(to_destroy);
+}
+```
+
+<img width="948" alt="Screenshot 2024-04-06 at 12 51 51 PM" src="https://github.com/liuandy1207/notes/assets/72530429/9af17e7e-ba91-4f73-be5c-0cfce2850695">
 
 
 
