@@ -10,6 +10,7 @@
 - [Modules](./topics/c/modules.md)
 - [Abstract Data Types](./topics/c/abstractDataTypes.md)
 - [Strings](./topics/c/strings.md)
+- [Linked Lists](./topics/c/linkedLists.md)
 - [Model](./topics/c/model.md)
 - [Style*](./topics/c/style.md)
 
