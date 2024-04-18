@@ -20,7 +20,6 @@ Dereferencing a `NULL` pointer will crash the program.
 
 ## `void` Pointers 
 `void` pointers can point at anything. <br>
-`void` pointers can NOT point at functions.
 
 `void` pointers can NOT be dereferenced. <br>
 However, `void` pointer addresses can be assigned to any pointer variable and THEN be dereferenced.<br>
