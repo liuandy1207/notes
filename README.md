@@ -1,3 +1,21 @@
+# Python
+
+
+
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
 # C
 - [History](./topics/c/history.md)
 - [Basics](./topics/c/basics.md)
